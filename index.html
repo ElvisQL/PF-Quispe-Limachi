@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--FONTS DE GOOGLE FONTS------------------------->
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <!------------------------------------------------>
+    <!--BOOSTRAP--------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!--ICONOS BOOSTRAP-------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <!------------------------------------------------->
+    <!--ESTILOS CSS------------------------------------>
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>SportWearz</title>
+
+</head>
+<body>
+  <header>
+      <!--NAVBAR DE BOOSTRAP----------------------------------------------------------->
+      <nav class="navbar navbar-expand-lg flex-wrap">
+        <!--PARTE SUPERIOR-->
+        <div class="container-fluid flex-row justify-content-sm-around justify-content-center bg-color1 pl-5 pr-5">
+          <a class="navbar-brand order-lg-1 order-sm-2 d-none d-sm-block" href="#">
+            <img src="multimedia/logo.png" alt="Logo" class="img-fluid">
+          </a>                                                                  <!--2 LOGOS SEGUN EL TAMAÑO , UNO FLUIDO Y OTRO NO-->
+          <a class="navbar-brand order-2 d-sm-none d-block" href="#">
+            <img src="multimedia/logo.png" alt="Logo">
+          </a>
+             
+          <!--BARRA DE BUSQUEDA---------->
+          <form class="d-lg-flex d-none order-2" role="search">
+            <input class="form-control me-2" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+            <button class="btn btn-outline-success bg-color3" type="submit">Buscar</button>
+          </form>
+          <!------------------------------>
+          
+          <!--CONTENEDOR DE ICONOS A LA DERECHA---------->
+          <div class="ml-auto order-3 d-flex justify-content-evenly px-30">
+            <img src="multimedia/icons8-usuario-masculino-en-círculo-50.png" alt="Logo 1" class="d-sm-block d-none">
+            <img src="multimedia/pngegg.png" alt="Logo 2" class="d-sm-block d-none">  
+          </div>
+          <!---------------------------------------------->
+
+          <!--BOTON DE DESPLEGAR MENU--------------------->
+          <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon img-fluid"></span>
+          </button>
+          <!---------------------------------------------->
+        </div>
+
+        <!--PARTE INFERIOR-->
+        <div class="container-fluid flex-lg-row bg-color2">
+          <div class="collapse navbar-collapse justify-content-center " id="navbarTogglerDemo02">
+            <ul class="navbar-nav  flex-lg-row justify-content-center">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/Catalogo.html">Catalogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/about.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/ayuda.html">Ayuda</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header>
+
+  <main>
+      <!--CARRUSEL PRINCIPAL---------------------------->
+      <section id="carousel1" class="carousel slide" data-bs-ride ="carousel">
+        <div class="carousel-indicators gap-3">
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active im-1" data-bs-interval="5000">
+            <img src="multimedia/botin1.jpg" class="d-none d-md-block w-100" alt="...">
+            <img src="multimedia/img1-768.jpg" class="d-block d-md-none w-100" alt="...">
+          </div>
+          <div class="carousel-item im-2" data-bs-interval="5000">                                <!--LAS IMAGENES CAMBIAN SEGUN EL ANCHO DE PANTALLA-->
+            <img src="multimedia/botin2.jpg" class="d-none d-md-block w-100" alt="...">
+            <img src="multimedia/img2-769.jpg" class="d-block d-md-none w-100" alt="...">
+          </div>
+          <div class="carousel-item im-3" data-bs-interval="5000">
+            <img src="multimedia/botin3.jpg" class="d-none d-md-block w-100" alt="...">
+            <img src="multimedia/img3-768.jpg" class="d-block d-md-none w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev " type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </section>
+      <!------------------------------------------------->
+      
+
+      <!--CONTENIDO PRINCIPAL---------------------------->
+      <section class="container-lg d-flex main-container">
+        
+        <section class="row" >
+          <h2>Lo mas nuevo</h2>
+          <div class="col-md-1  d-none d-md-block">           
+          </div>
+          <div class="col-md-10 col" >
+
+            <div id="carouselMasNuevo" class="carousel slide ">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselMasNuevo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMasNuevo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselMasNuevo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row ">
+                    <div class="col-12 d-flex justify-content-evenly">
+                      <div class="card">
+                        <img src="multimedia/im10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card d-md-flex d-none">
+                        <img src="multimedia/im3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card d-md-flex d-none">
+                        <img src="multimedia/im5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  <div class="row">
+                    <div class="col d-flex justify-content-evenly">
+                      <div class="card">
+                        <img src="multimedia/im6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card d-md-flex d-none">
+                        <img src="multimedia/im8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+    
+                      </div>
+                      <div class="card d-md-flex d-none">
+                        <img src="multimedia/im9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item ">
+                  
+                  <div class="col d-flex justify-content-evenly">
+                    <div class="card">
+                      <img src="multimedia/im9.jpg" class="card-img-top" alt="...">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img src="multimedia/im10.jpg" class="card-img-top" alt="...">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card d-md-flex d-none">
+                      <img src="multimedia/casaca_river.jpg" class="card-img-top" alt="...">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                    <div class="card d-md-flex d-none">
+                      <img src="multimedia/camsietaarg.jpg" class="card-img-top" alt="...">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Precio = </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              
+              
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMasNuevo" data-bs-slide="prev">
+                <i class="bi bi-arrow-left-circle" aria-hidden="true"></i>
+
+                </span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMasNuevo" data-bs-slide="next">
+                <i class="bi bi-arrow-right-circle" aria-hidden="true"></i>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            
+          
+          </div>
+          <div class="col-1 d-none d-md-block">
+            
+          </div>
+        </section>
+        
+        <h2>Busqueda por Categoria</h2>
+        <section class="row">
+            
+            <div class="col-md-3 d-flex justify-content-center"> 
+              <div class="botonCategoria">
+                <img src="multimedia/bradley-dunn-fjpl1yrNvNQ-unsplash.jpg" alt="">
+                <h3>Hombre</h3>
+              </div>
+            </div>
+
+            <div class="col-md-9 d-md-block d-none">
+              <div id="carouselHombre" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row ">
+                      <div class="col d-flex">
+                        <div class="card">
+                          <img src="multimedia/im10.jpg" class="card-img-top" alt="...">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Precio= </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="multimedia/im2.jpg" class="card-img-top" alt="...">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Precio= </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="multimedia/im3.jpg" class="card-img-top" alt="...">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Precio= </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="multimedia/im5.jpg" class="card-img-top" alt="...">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Precio= </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+
+              
+                    <div class="row">
+                      <div class="col d-flex">
+                        <div class="card">
+                          <img src="multimedia/im6.jpg" class="card-img-top" alt="...">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Precio= </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="multimedia/im7.jpg" class="card-img-top" alt="...">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Precio= </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="multimedia/im8.jpg" class="card-img-top" alt="...">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Precio= </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+      
+                        </div>
+                        <div class="card">
+                          <img src="multimedia/im9.jpg" class="card-img-top" alt="...">
+                          <div class="card-body d-flex flex-column justify-content-between">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Precio= </p>
+                            <a href="#" class="btn btn-primary">Comprar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>              
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHombre" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselHombre" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+          
+        
+        
+          </div>
+        </section>
+
+        <section class="row"> 
+          <div class="col-md-9 d-md-block d-none">
+            <div id="carouselMujer" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row ">
+                    <div class="col d-flex">
+                      <div class="card">
+                        <img src="multimedia/im10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+
+            
+                  <div class="row">
+                    <div class="col d-flex">
+                      <div class="card">
+                        <img src="multimedia/im6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+    
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>              
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselMujer" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselMujer" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+             
+              </button>
+            </div>
+          </div>
+          
+          
+          <div class="col-md-3 d-flex justify-content-center">
+            <div class="botonCategoria">
+              <img src="multimedia/mujer-corriendo.png" alt="">
+              <h3>Mujer</h3>
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="row">
+          <div class="col-md-3 d-flex justify-content-center">
+            <div class="botonCategoria">
+              <img src="multimedia/niños_jugando.png" alt="">
+              <h3>Niños</h3>
+            </div>
+          </div>
+          <div class="col-md-9 d-md-block d-none">
+            <div id="carouselNinio" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row ">
+                    <div class="col d-flex">
+                      <div class="card">
+                        <img src="multimedia/im10.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+
+            
+                  <div class="row">
+                    <div class="col d-flex">
+                      <div class="card">
+                        <img src="multimedia/im6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im7.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im8.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+    
+                      </div>
+                      <div class="card">
+                        <img src="multimedia/im9.jpg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column justify-content-between">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Precio= </p>
+                          <a href="#" class="btn btn-primary">Comprar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                </div>             
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselNinio" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselNinio" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+             
+              </button>
+            </div>
+          </div>
+          
+        </section>
+        
+        <section class="mensajes-aclaraciones">
+        
+          <div class="box-mensaje">
+            <div class="icono"><i class="bi bi-credit-card" > </i></div>
+            <span>Cuotas y formas de pago:</span>
+            <span>3 cuotas sin interes y</span>
+            
+          </div>
+          <div class="box-mensaje">
+            <div class="icono"><i class="bi bi-truck"></i></div>
+            
+            <span>Envios gratis a todo el pais</span> 
+             <span>Envios gratis a partir de 20000$</span>
+            
+          </div>
+          <div class="box-mensaje">
+            <div class="icono"><i class="bi bi-arrow-repeat"></i></div>
+            <span>Cambios y devoluciones </span>
+            <span> Para cambios y devoluciones <a>contactar</a></span>
+            
+          </div>
+          
+  
+        </section>
+        
+
+      </section>
+      <!------------------------------------------------->
+      
+  </main>
+
+  <footer>
+      <!--NEWSLETTER------------------------------------->
+      <section class="newsletter">
+          <div class="text-newsletter">
+              <h2>Newsletter</h2>
+              <p>¡Suscríbete a nuestro boletín de noticias y recibe contenido exclusivo diseñado especialmente para los amantes del deporte. Además, obténe un 15% de descuento en tu próxima compra al unirte a nuestra lista de correo hoy mismo.</p>
+          </div>
+          <form class="form-newsletter">
+              <input type="text" placeholder="Ingrese su Email">
+              <button type="submit">Subscribirse</button>
+          </form>
+
+      </section>
+      <!------------------------------------------------->
+
+      <!--PIE DE PAGINA --------------------------------->
+      <section class="pie">
+          
+          <img src="multimedia/logo.png" alt="logo">
+          
+          <nav class = "cont-informacion">
+              
+              <div class="box-footer">
+                  <h3>Nosotros</h3>
+                  <ul>
+                      <li><a href="">Terminos y condiciones</a></li>
+                      <li><a href="">Como comprar</a></li>
+                      <li><a href="">Sobre Nosotros</a></li>
+                      <li><a href="">Sucursales</a></li>
+                  </ul>
+              </div>
+              
+              
+              <div class="box-footer">
+                  <h3>Informacion</h3>
+                  <ul>
+                      <li><a href="">Medios de pago</a></li>
+                      <li><a href="">Preguentas frecuentes</a></li>
+                      <li><a href="">Politicas de Cambio</a></li>
+                      <li><a href="">Politicas de Envio</a></li>
+                  </ul>
+              </div>
+
+              <div class="box-footer">
+                  <h3>Seguinos en</h3>
+                  <ul>
+                    <li><i class="bi bi-facebook"></i></li>
+                    <li><i class="bi bi-instagram"></i></li>
+                    <li><i class="bi bi-whatsapp"></i></li>
+                      
+                   </ul> 
+              </div>
+              
+          </nav>  
+      </section> 
+      <!------------------------------------------------>
+
+      <!--DERECHOS RESERVADOS--------------------------->
+      <section class="copyright">
+        <span>Todos los derechos Reservados | © SportWearz </span>
+      </section>
+      <!------------------------------------------------>
+      
+  </footer>
+  
+  <!--SCRIPT DE BOOSTRAP------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+</body>
+</html>
