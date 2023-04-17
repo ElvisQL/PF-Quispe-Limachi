@@ -1,0 +1,136 @@
+/*************************FOOTER************************************/
+
+footer {
+    height: 100%;
+}
+
+.box-mensaje {
+    width: 220px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.box-mensaje .icono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+
+.newsletter {
+    padding: 20px;
+    display: flex;
+    background-color: #f6f5f2;
+    border-color:  #57297591;
+    border-radius: 5px;
+    border-style: solid;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.text-newsletter {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.text-newsletter h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+.text-newsletter p {
+    
+    font-size: 14px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+}
+
+
+.form-newsletter {
+    display: flex;
+    width: auto;
+}
+
+.form-newsletter input[type="text"] {
+    width: 80%;
+    border-color: rgb(147, 219, 200);
+    border-style: groove;
+    border-radius: 5px;
+    padding: 10px;
+}
+.form-newsletter button[type="submit"]{
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.pie {
+    background-color: #f6f5f2;
+    padding: 20px 0; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pie img {
+    height: 70px ;
+    
+}
+
+
+
+.cont-informacion{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+     
+}
+
+.box-footer ul {
+    padding-left: 0;
+}
+.box-footer ul li img{
+    height: 20px;
+}
+
+.box-footer h3 {
+    margin-bottom: 10px;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+}
+
+.box-footer ul li {
+    margin-top: 10px;
+}
+
+.cont-informacion ul {
+    list-style: none;
+}
+
+.cont-informacion ul li a{
+    text-decoration: none;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    color: #f6f5f2;
+    background-color: #000;
+}
