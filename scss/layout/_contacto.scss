@@ -6,39 +6,51 @@
     display: flex;
     padding: 8vw 16vw;
     justify-content: space-between;
+    .cont-contactate {
+        form {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: auto;
+            grid-template-areas: 
+            "form mensaje"
+            "form mensaje"
+            "enviar enviar";
+            gap: 10%;
+            .formulario-1 {
+                grid-area: form;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .formulario-mensaje {
+                grid-area: mensaje;
+                display: flex;
+                flex-direction: column;
+            }
+            .boton {
+                grid-area: enviar;
+            }
+        }
+        
+    
+    }
+    .cont-redes {
+        ul{
+            list-style: none;
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+
 }
 
-.cont-contactate form{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "form mensaje"
-    "form mensaje"
-    "enviar enviar";
-    gap: 10%;
 
-}
 
-.formulario-1 {
-    grid-area: form;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.formulario-mensaje {
-    grid-area: mensaje;
-    display: flex;
-    flex-direction: column;
-}
 
-.cont-contactate .boton {
-    grid-area: enviar;
-}
 
-.cont-redes ul{
-    list-style: none;
-}
-.cont-redes i{
-    font-size: 25px;
-}
+
+
+
+
+

@@ -3,163 +3,347 @@
 /***************************************************************************************/
 
 
-@media (max-width: 991px) {
-    #navbarTogglerDemo02 ul {
-        display: flex;
-        gap: 5px;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 100;
-        width: 100%;
-        padding-top: 1rem;
+@media screen and (max-width: 991px) {
+    .navbar{
+        .bg-color2{
+            #navbarTogglerDemo02 {
+                ul{
+                    display: flex;
+                    gap: 15px;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    z-index: 100;
+                    width: 100%;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    background-color: $headercolor2b;      
+                    .nav-item{
+                        .nav-link {
+                            gap: 0;
+                            border-radius: 0.25rem;
+                            transition: all 0.3s ease;
+                            color: $headercolor1;
+                            font-weight: 200;
+                            font-style:normal;
+                            padding-left: 1.5rem;
+                            &:hover{
+                                background-color: $headercolor2;
+                            }
+                        }
+                    }
+                        
+                }
+                
+            }
+        }
+    }
+    
+
+
+    /***************ABOUT***************/
+    .contenido-about{
+        @include d-grid(repeat(2,1fr),repeat(4,1fr),"texto texto " "texto texto " "form form " "map map",0,auto,auto);
+        padding: 8vw 16vw;
+        .titulo-about{
+            grid-area: texto;
+        }
+        .formulario-about {
+            grid-area: form;
+            display: flex;
+            align-items: center;  
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                select {
+                    width: 100%;
+                }  
+            }
+        }
+        .mapa-div {
+            grid-area: map;
+            iframe {
+                @include box-size(100%,100%,0,0);
+            }
+        }
+    }
+
+    //CONTACTO
+    .container-contacto {
+        @include d-flex(column,null,null,null,wrap,20px);
+        padding: 8vw 16vw;
+        .cont-contactate {  
+            form { 
+
+                @include d-grid(repeat(2,1fr), auto minmax(0,1fr), "form mensaje""form mensaje""enviar enviar",20px,auto,auto);
+
+                .formulario-1 {
+                    grid-area: form;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .formulario-mensaje {
+                    grid-area: mensaje;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .boton {
+                    
+                    grid-area: enviar;
+                    
+                }
+            }
+            
         
-        border: 1px solid #ddd;
-        border-top: none;
-        background-color: #572975f8;        
+        }
+        .cont-redes {
+            
+            ul{
+                list-style: none;
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+    
     }
-    .navbar-nav {
-        padding-left: 2rem;
-    }
-    .navbar-nav .nav-link {
-        padding: 0.5rem 1rem;
-        color: white;
-        border-radius: 0.25rem;
-        transition: all 0.3s ease;
-    }
-    .navbar-nav .nav-link:hover {
-        background-color: #0c0909;
-    }
+
 }
 
 
 
-@media (max-width:767px) {
-    .mensajes-aclaraciones {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        justify-content: space-around;
-        gap: 5%;
-        align-items: center;
-        padding-top: 3%;
-    }
-    .box-mensaje {
-        width: 220px;
-        height: 220px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        text-align: center;
-        border-radius: 0;
-        background-color: #f6f5f2;     
-    }
+@media screen and (max-width:767px) {
+    main{
+        .main-container{
+            .row{
+                .botonCategoria{
+                    @include d-flex(row,center,center,null,wrap,0);
+                    @include box-size(200px,350px,0,0);
+                    border-radius: 5%;
+                    box-shadow: 0 5px 2px black;
+                    position: relative;
+                    overflow: hidden;
+                }
+            }
+            .mensajes-aclaraciones {
+                @include d-flex(column,space-evenly,center,null,wrap,80px);
+                @include box-size(auto,auto,10% 0,0);
 
-
-    .pie{
-        background-color: #f6f5f2;
-        padding: 20px 0; 
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
+                .box-mensaje {
+                    @include d-flex(column,flex-start,center,null,wrap,0);
+                    @include box-size(auto, 220px,0,0);
+                    text-align: center;
+                    background-color: $main_color;     
+                    border: none;
+                }
+            
+            }
+        }
     }
-    .cont-informacion{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        
-        
-    }
-    .newsletter {
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        background-color: #f6f5f2;
-        border-color:  #57297591;
-        border-radius: 5px;
-        border-style: solid;
-        justify-content: space-around;
-        align-items: center;
     
+    
+    
+    
+    
+    footer {
+        .newsletter {
+            @include d-flex(column,space-around,center,null,wrap,0);
+            padding: 20px;
+            background-color: $main_color;
+            border-color:  #57297591;
+            border-radius: 5px;
+            border-style: solid;
+
+        }
+        .pie{
+            @include d-flex(column,space-around,center,null,wrap,0);
+            background-color: $main_color;
+            padding: 20px 0; 
+            .cont-informacion{
+                @include d-flex(column,space-between,null,null,wrap,0);
+                width: 50%;
+            }
+        }
     }
 
-    .botonCategoria {
-        display: flex;
-        height: 200px;
-        width: 350px;
-        border-radius: 5%;
-        box-shadow: 0 5px 2px black;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        overflow: hidden;
-
+    //AYUDA
+    .cont-ayuda {
+        padding: 8vw 16vw;
+        .medios-pago {
+            @include d-flex(column,space-evenly,center,null,wrap,0);
+    
+            img{
+                @include box-size(60px,120px,0,0);
+            }
+            
+        }
     }
 }
 
 @media screen and (max-width:576px) {
     
-    .card .card-body h5{
-        font-size: 2.5vw;
-    }
-    .card .card-body p{
-        font-size: 2.5vw;
-    }
-    .card .card-body a{
-        font-size: 2.5vw;
+    footer {
+        .newsletter {
+            @include d-flex(column,space-around,center,null,wrap,0);
+            padding: 20px;
+            background-color: $main_color;
+            border-color:  #57297591;
+            border-radius: 5px;
+            border-style: solid;
+            .text-newsletter{
+                @include d-flex(column,null,null,flex-start,wrap,0);
+                width: 100%;
+
+                h2 {
+                    margin-bottom: 5px;
+                    font-size: 24px;
+                    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+                }
+                p{
+                    font-size: 14px;
+                    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+                    line-height: 1.6;
+                } 
+            }
+        } 
     }
 
+    .navbar {
+        .container-fluid{
+            @include d-flex(row,space-between,null,null,nowrap,0);
+            padding: 0; 
+        }
+    }
+
+    .card {
+        .card-body {
+            h5 ,p, a {
+                font-size: 2.5vw;
+            }
+        }
+    }
+
+    
     .newsletter .text-newsletter {
         width: 100%;
     }
 
     
-    
-    .filtros{
-        width: 100%;
-    }
-    .productos {
-        width: 100%;
-    }
+    //CATALOGO
     .container-catalogo {
-        display: flex;
-        flex-direction: column;
-        gap: 5%;
+        @include d-flex(column,null,null,null,wrap,5%);
         padding: 8vw 6vw;
+
+        .filtros{
+            width: 100%;
+        }
+        .productos {
+            @include d-grid(repeat(auto-fit,minmax(120px,1fr)),auto,null,20px,auto,auto);
+            width: 100%;
+            h2{
+                grid-column: 1 / -1;
+                margin-bottom: 1.5%;
+            }  
+        }
     }
-    .container-catalogo .productos{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(120px,1fr));
-        gap: 20px;
+    //ABOUT
+    .contenido-about{
+        @include d-grid(1fr,auto,"texto""form""map",0,auto,auto);
+        padding: 8vw 16vw;
         
-    }
-    .productos h2{
-        grid-column: 1 / -1;
-        margin-bottom: 1.5%;
+        .titulo-about{
+            grid-area: texto;
+        }
+        .formulario-about {
+            grid-area: form;
+            display: flex;
+            align-items: center;
+            
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 50px;
+                select {
+                    width: 100%;
+                }  
+            }
+        }
+        .mapa-div {
+            grid-area: map;
+             iframe {
+                @include box-size(auto,100%,0,0);
+            }
+        }
     }
 
+    //CONTACTO
+    .container-contacto {
+        display: flex;
+        padding: 8vw 16vw;
+        flex-direction: column;
+        .cont-contactate { 
+            
+            form {
+
+                @include d-grid(1fr,auto minmax(0,1fr),"form""mensaje""enviar",10px,auto,auto);
+
+                .formulario-1 {
+                    grid-area: form;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    label{
+                        width: auto;
+                    }
+                }
+                .formulario-mensaje {
+                    grid-area: mensaje;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .boton {
+                    
+                    grid-area: enviar;
+                    
+                }
+            }
+            
+        
+        }
+        .cont-redes {
+            
+            ul{
+                list-style: none;
+                i{
+                    font-size: 25px;
+                }
+            }
+        }
+    
+    }
+
+
+    
+    
 }
 
 @media screen and (max-width:300px){
     .card{
         width: 100%;
+        .card-body{
+            h5, p, a {
+                font-size: 3vw;
+            }
+        }
     }
-    .card .card-body h5{
-        font-size: 3vw;
-    }
-    .card .card-body p{
-        font-size: 3vw;
-    }
-    .card .card-body a{
-        font-size: 3vw;
-    }
-    .container-catalogo .productos{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
-        gap: 20px;
-        
+    
+    .container-catalogo {
+        .productos{
+            @include d-grid(repeat(auto-fit,minmax(100px,1fr)),auto,null,20px,auto,auto);
+              
+        }
     }
 }

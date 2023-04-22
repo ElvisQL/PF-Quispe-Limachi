@@ -15,24 +15,31 @@
     "form form map map"
     "form form map map";
     gap: 5%;
+
+
+    .titulo-about {
+        grid-area: texto;
+    
+    }
+    .formulario-about {
+        grid-area: form;
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .mapa-div {
+        grid-area: map;
+         iframe {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
 }
 
 
-.titulo-about {
-    grid-area: texto;
 
-}
-.formulario-about {
-    grid-area: form;
-}
-.formulario-about form {
-    display: flex;
-    flex-direction: column;
-}
-.mapa-div {
-    grid-area: map;
-}
-.mapa-div iframe {
-    height: 100%;
-    width: 100%;
-}
+
+
+
