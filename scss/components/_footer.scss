@@ -9,7 +9,7 @@ footer {
         background-color: $main_color;
         border-color:  $headercolor2;
         border-radius: 5px;
-        border-style: solid;
+        border-style: ridge;
         
 
         .text-newsletter {
@@ -32,20 +32,28 @@ footer {
         .form-newsletter {
             display: flex;
             width: auto;
+            gap: 2px;
             input[type="text"]{
                 width: 80%;
-                border-color: rgb(147, 219, 200);
-                border-style: groove;
+                border-color: $headercolor2;
+                border-style: solid;
                 border-radius: 5px;
                 padding: 10px;
             }
             button[type="submit"]{
-                background-color: #007bff;
-                border: none;
-                color: #fff;
+                background-color: $main_color;
+                border-radius: 5px;
+                border-color: $headercolor2;
+                border-style: solid;
+                color: $negroclarito;
                 padding: 10px;
                 font-size: 16px;
                 border-radius: 4px;
+                &:hover{
+                    border: none;
+                    background-color: $headercolor2;
+                    color: #fff;
+                }
             }
         }
     }
@@ -81,6 +89,9 @@ footer {
                 ul  {
                     padding-left: 0;
                     li {
+                        a{
+                            color: $headercolor2b;
+                        }
                         margin-top: 10px;
                         img {
                             height: 20px;

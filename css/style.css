@@ -5,58 +5,65 @@
 }
 
 /*************NAVBAR**************************************/
-.navbar {
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+}
+header .navbar {
   padding: 0;
 }
-.navbar img {
+header .navbar img {
   width: 250px;
 }
-.navbar .bg-color1 {
+header .navbar .bg-color1 {
   background-color: #ffffec;
   padding: 0;
 }
-.navbar .bg-color1 form {
+header .navbar .bg-color1 form {
   width: 40%;
   justify-content: center;
 }
-.navbar .bg-color1 form .form-control {
+header .navbar .bg-color1 form .form-control {
   width: 70%;
   margin-right: 20px;
-  border: 2px solid rgba(87, 41, 117, 0.568627451);
+  border: 2px solid #9f85b0;
   border-radius: 10px;
 }
-.navbar .bg-color1 form .bg-color3 {
-  border: 2px solid rgba(87, 41, 117, 0.568627451);
+header .navbar .bg-color1 form .bg-color3 {
+  border: 2px solid #9f85b0;
   color: #1C1C1C;
 }
-.navbar .bg-color1 form .bg-color3:hover {
-  background-color: rgba(87, 41, 117, 0.568627451);
+header .navbar .bg-color1 form .bg-color3:hover {
+  background-color: #9f85b0;
   border: none;
   color: #ffffec;
 }
-.navbar .bg-color1 .ml-auto {
+header .navbar .bg-color1 .ml-auto {
   width: 10%;
 }
-.navbar .bg-color1 .ml-auto img {
+header .navbar .bg-color1 .ml-auto img {
   width: 35px;
   height: 35px;
 }
-.navbar .bg-color1 .ml-auto img:hover {
+header .navbar .bg-color1 .ml-auto img:hover {
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
 }
-.navbar .bg-color2 {
-  background-color: rgba(87, 41, 117, 0.568627451);
+header .navbar .bg-color2 {
+  background-color: #9f85b0;
   padding: 0;
 }
-.navbar .bg-color2 #navbarTogglerDemo02 ul {
+header .navbar .bg-color2 #navbarTogglerDemo02 ul {
   display: flex;
   gap: 60px;
 }
-.navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item {
+header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item {
+  border-radius: 5%;
   transition: all 0.2s ease-in-out;
 }
-.navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link {
+header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link {
   font-size: 18px;
   line-height: 30px;
   color: #1C1C1C;
@@ -64,8 +71,8 @@
   font-style: oblique;
   font-weight: bold;
 }
-.navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item:hover {
-  background-color: rgba(112, 79, 134, 0.9725490196);
+header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item:hover {
+  background: #ffffec;
 }
 
 /*************************************************************/
@@ -82,9 +89,9 @@ footer .newsletter {
   gap: 0;
   padding: 20px;
   background-color: #f6f5f2;
-  border-color: rgba(87, 41, 117, 0.568627451);
+  border-color: #9f85b0;
   border-radius: 5px;
-  border-style: solid;
+  border-style: ridge;
 }
 footer .newsletter .text-newsletter {
   display: flex;
@@ -107,21 +114,29 @@ footer .newsletter .text-newsletter p {
 footer .newsletter .form-newsletter {
   display: flex;
   width: auto;
+  gap: 2px;
 }
 footer .newsletter .form-newsletter input[type=text] {
   width: 80%;
-  border-color: rgb(147, 219, 200);
-  border-style: groove;
+  border-color: #9f85b0;
+  border-style: solid;
   border-radius: 5px;
   padding: 10px;
 }
 footer .newsletter .form-newsletter button[type=submit] {
-  background-color: #007bff;
-  border: none;
-  color: #fff;
+  background-color: #f6f5f2;
+  border-radius: 5px;
+  border-color: #9f85b0;
+  border-style: solid;
+  color: #1C1C1C;
   padding: 10px;
   font-size: 16px;
   border-radius: 4px;
+}
+footer .newsletter .form-newsletter button[type=submit]:hover {
+  border: none;
+  background-color: #9f85b0;
+  color: #fff;
 }
 footer .pie {
   background-color: #f6f5f2;
@@ -160,6 +175,9 @@ footer .pie .cont-informacion .box-footer ul {
 footer .pie .cont-informacion .box-footer ul li {
   margin-top: 10px;
 }
+footer .pie .cont-informacion .box-footer ul li a {
+  color: rgba(112, 79, 134, 0.9725490196);
+}
 footer .pie .cont-informacion .box-footer ul li img {
   height: 20px;
 }
@@ -183,12 +201,12 @@ main #carousel1 .carousel-indicators [data-bs-target] {
   border-radius: 50%;
   height: 10px;
   width: 10px;
-  border-color: rgba(87, 41, 117, 0.568627451);
+  border-color: #9f85b0;
   border-width: 1px;
   border-style: solid;
 }
 main #carousel1 .carousel-indicators [data-bs-target] .active {
-  background-color: rgba(87, 41, 117, 0.568627451);
+  background-color: #9f85b0;
 }
 main #carousel1 .carousel-inner .carousel-item {
   transition: transform 0.7s ease-in-out;
@@ -207,7 +225,7 @@ main #carousel1 .carousel-control-prev:hover::before {
   right: 0;
   bottom: 0;
   opacity: 0.3;
-  background-color: rgba(87, 41, 117, 0.568627451);
+  background-color: #9f85b0;
 }
 main #carousel1 .carousel-control-prev:hover::after {
   position: absolute;
@@ -216,7 +234,7 @@ main #carousel1 .carousel-control-prev:hover::after {
   right: 0;
   bottom: 0;
   opacity: 0.3;
-  background-color: rgba(87, 41, 117, 0.568627451);
+  background-color: #9f85b0;
 }
 main #carousel1 .carousel-control-next:hover {
   transition: opacity 0.5s ease-in-out;
@@ -229,7 +247,7 @@ main #carousel1 .carousel-control-next:hover::before {
   right: 0;
   bottom: 0;
   opacity: 0.3;
-  background-color: rgba(87, 41, 117, 0.568627451);
+  background-color: #9f85b0;
 }
 main #carousel1 .carousel-control-next:hover::after {
   position: absolute;
@@ -238,7 +256,7 @@ main #carousel1 .carousel-control-next:hover::after {
   right: 0;
   bottom: 0;
   opacity: 0.3;
-  background-color: rgba(87, 41, 117, 0.568627451);
+  background-color: #9f85b0;
 }
 main .main-container {
   display: flex;
@@ -259,14 +277,27 @@ main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item, main
   transition: transform 0.7s ease-out;
 }
 main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card {
+  height: auto;
   width: 100%;
   margin: 2%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.54);
+  transition: all 0.2s ease-in-out;
+}
+main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body img, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body img, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body img, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body img {
+  height: 100%;
+}
+main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body .btn {
+  transition: transform 0.5s;
+  background-color: #73529e;
+  color: #fff;
+}
+main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body .btn:hover, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body .btn:hover, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body .btn:hover, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body .btn:hover {
+  transform: scale(1.05);
+  border-color: #73529e;
 }
 main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card:hover, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card:hover, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card:hover, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 10px rgba(112, 79, 134, 0.9725490196);
-  transition: transform 0.2s ease-out;
+  transform: scale(1.04);
+  box-shadow: 0 10px 7px rgba(112, 79, 134, 0.9725490196);
 }
 main .main-container .row #carouselMasNuevo .carousel-control-prev, main .main-container .row #carouselHombre .carousel-control-prev, main .main-container .row #carouselMujer .carousel-control-prev, main .main-container .row #carouselNinio .carousel-control-prev {
   left: 0;
@@ -274,8 +305,8 @@ main .main-container .row #carouselMasNuevo .carousel-control-prev, main .main-c
   justify-content: flex-start;
 }
 main .main-container .row #carouselMasNuevo .carousel-control-prev i, main .main-container .row #carouselHombre .carousel-control-prev i, main .main-container .row #carouselMujer .carousel-control-prev i, main .main-container .row #carouselNinio .carousel-control-prev i {
-  font-size: 25px;
-  color: black;
+  font-size: 35px;
+  color: #73529e;
 }
 main .main-container .row #carouselMasNuevo .carousel-control-next, main .main-container .row #carouselHombre .carousel-control-next, main .main-container .row #carouselMujer .carousel-control-next, main .main-container .row #carouselNinio .carousel-control-next {
   left: auto;
@@ -283,8 +314,8 @@ main .main-container .row #carouselMasNuevo .carousel-control-next, main .main-c
   justify-content: flex-end;
 }
 main .main-container .row #carouselMasNuevo .carousel-control-next i, main .main-container .row #carouselHombre .carousel-control-next i, main .main-container .row #carouselMujer .carousel-control-next i, main .main-container .row #carouselNinio .carousel-control-next i {
-  font-size: 25px;
-  color: black;
+  font-size: 35px;
+  color: #73529e;
 }
 main .main-container .row .botonCategoria {
   display: flex;
@@ -303,6 +334,7 @@ main .main-container .row .botonCategoria {
   background-position: center;
   transition: all 0.5s;
   opacity: 1;
+  box-shadow: 0 3px 15px #1C1C1C;
 }
 main .main-container .row .botonCategoria img {
   position: absolute;
@@ -317,8 +349,8 @@ main .main-container .row .botonCategoria img {
 main .main-container .row .botonCategoria h3 {
   font-family: Sackbones;
   font-size: 38px;
-  -webkit-text-stroke: 1px rgba(87, 41, 117, 0.568627451);
-  text-stroke: 1px rgba(87, 41, 117, 0.568627451);
+  -webkit-text-stroke: 1px #9f85b0;
+  text-stroke: 1px #9f85b0;
   -webkit-text-fill-color: #fff;
   text-fill-color: #fff;
   z-index: 1;
@@ -359,8 +391,9 @@ main .main-container .mensajes-aclaraciones .box-mensaje {
   text-align: center;
   border: solid;
   border-width: 2px;
-  border-color: rgba(87, 41, 117, 0.568627451);
+  border-color: #9f85b0;
   border-radius: 50%;
+  box-shadow: 0 3px 15px #1C1C1C;
   background-color: #fff;
 }
 main .main-container .mensajes-aclaraciones .box-mensaje .icono {
@@ -375,6 +408,13 @@ main .main-container .mensajes-aclaraciones .box-mensaje .icono {
   padding: 0;
   border: 2px solid #000;
   border-radius: 50%;
+}
+main .main-container .separador {
+  text-align: center;
+  border-top: 3px solid #9f85b0;
+  border-radius: 50%;
+  width: 80%;
+  margin: 20px auto;
 }
 
 /*****************************************************/
@@ -511,7 +551,7 @@ main .main-container .mensajes-aclaraciones .box-mensaje .icono {
     padding-left: 1.5rem;
   }
   .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link:hover {
-    background-color: rgba(87, 41, 117, 0.568627451);
+    background-color: #9f85b0;
   }
   /***************ABOUT***************/
   .contenido-about {

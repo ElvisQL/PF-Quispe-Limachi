@@ -12,7 +12,7 @@
 main {
     background-color: $main_color;
     height: auto;
-
+    
     #carousel1 {
         .carousel-indicators [data-bs-target] {
             border-radius: 50%;
@@ -109,31 +109,51 @@ main {
             #carouselMasNuevo, #carouselHombre, #carouselMujer, #carouselNinio {
                 
                 .carousel-inner {
+                    
                     .carousel-item{
-                       
                         transition: transform 0.7s ease-out;
-                        .card {
+                        .card{
+                            height: auto;
                             width: 100%;
                             margin: 2%;
-                            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.540);
+                            box-shadow: 0px  2px 5px rgba(0, 0, 0, 0.540);
+                            transition: all 0.2s ease-in-out;
+                            .card-body{
+                            
+                                img{
+                                    height: 100%;
+                                }
+                                .btn{
+                                    transition: transform 0.5s;
+                                    background-color:#73529e;
+                                    color:#fff;
+                                    
+
+                                    &:hover{
+                                        
+                                        transform: scale(1.05);
+                                        border-color: #73529e;
+                                    }
+                                }
+
+                            }
                             &:hover{
-                                transform: scale(1.02);
-                                box-shadow: 0 0 10px $headercolor2b;
-                                transition: transform 0.2s ease-out;
+                                transform: scale(1.04);
+                                box-shadow: 0 10px 7px $headercolor2b;         
                             }
                         }
-                        
-                        
                     }
-                    
+       
                 }
+                    
+                
                 .carousel-control-prev{
                     left: 0;
                     right: auto;
                     justify-content: flex-start;
                     i {
-                        font-size: 25px;
-                        color: black;
+                        font-size: 35px;
+                        color: #73529e;
                     }
                 }
                 .carousel-control-next{
@@ -141,8 +161,8 @@ main {
                     right: 0;
                     justify-content: flex-end;
                     i {
-                        font-size: 25px;
-                        color: black;
+                        font-size: 35px;
+                        color: #73529e;
                     }
                 }
             }
@@ -161,6 +181,7 @@ main {
                 background-position: center;
                 transition: all 0.5s;
                 opacity: 1;
+                box-shadow: 0 3px 15px $negroclarito;
                 img {
                     position: absolute;
                     top: 0;
@@ -214,6 +235,7 @@ main {
                 border-width: 2px;
                 border-color: $headercolor2;
                 border-radius: 50%;
+                box-shadow: 0 3px 15px $negroclarito;
                 background-color: #fff;
                 .icono {
                     @include d-flex(row,center,center,null,wrap,0);
@@ -223,6 +245,13 @@ main {
                 }
             } 
         }   
+        .separador{
+            text-align: center;
+            border-top: 3px solid $headercolor2; 
+            border-radius: 50%;
+            width: 80%; 
+            margin: 20px auto; 
+        }
     }
 }
 
