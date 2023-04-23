@@ -15,17 +15,58 @@
         width: 20%;
         .accordion {
             --bs-accordion-bg: $main_color;
+            margin-top: 50px;
+            .accordion-body{
+                @include d-flex(column,space-between,flex-start,null,wrap, 10px);
+            }
         }
     }
 
     .productos {
-        width: 80%;
+        
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-        gap: 20px;
+        gap: 2vw;
         h2 {
             grid-column: 1 / -1;
             margin-bottom: 1.5%;
+        }
+        .card{
+            height: 100% - 18%;
+            box-shadow: 0px  2px 5px rgba(0, 0, 0, 0.540);
+            overflow: hidden;
+            transition: height 0.6s;
+            width: 100%;
+            
+            .card-body{
+                img {
+                    height: 100%;
+                }
+                .btn {
+                    width: 100%;
+                    background-color:#73529e;
+                    color:#fff;
+                    opacity: 0;
+                    transition: opacity 0.2s ease-in-out;
+                    border: none;
+                    transition: transform 0.5s;
+                    &:hover{
+                        transform: scale(1.05);
+                        border-color: #73529e;
+                        
+                    }
+                }
+                
+            }
+           
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 0 10px $headercolor2b;
+                height: 100% ;
+                .btn {
+                    opacity: 1;
+                }
+            }
         }
     }
 
