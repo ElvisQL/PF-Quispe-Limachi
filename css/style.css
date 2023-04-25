@@ -9,7 +9,7 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 1000000;
+  z-index: 1000;
 }
 header .navbar {
   padding: 0;
@@ -23,7 +23,6 @@ header .navbar .bg-color1 {
 }
 header .navbar .bg-color1 form {
   width: 40%;
-  justify-content: center;
 }
 header .navbar .bg-color1 form .form-control {
   width: 70%;
@@ -33,7 +32,7 @@ header .navbar .bg-color1 form .form-control {
 }
 header .navbar .bg-color1 form .bg-color3 {
   border: 2px solid #9f85b0;
-  color: #1C1C1C;
+  color: #2e2e2e;
 }
 header .navbar .bg-color1 form .bg-color3:hover {
   background-color: #9f85b0;
@@ -44,8 +43,9 @@ header .navbar .bg-color1 .ml-auto {
   width: 10%;
 }
 header .navbar .bg-color1 .ml-auto img {
-  width: 35px;
   height: 35px;
+  width: 35px;
+  padding: 0;
 }
 header .navbar .bg-color1 .ml-auto img:hover {
   transform: scale(1.2);
@@ -60,16 +60,15 @@ header .navbar .bg-color2 #navbarTogglerDemo02 ul {
   gap: 60px;
 }
 header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item {
-  border-radius: 5%;
   transition: all 0.2s ease-in-out;
 }
 header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link {
-  font-size: 18px;
-  line-height: 30px;
-  color: #1C1C1C;
+  font-size: 20px;
   font-family: "Roboto";
-  font-style: oblique;
-  font-weight: bold;
+  color: #2e2e2e;
+  line-height: 30px;
+  font-weight: 500;
+  font-style: normal;
 }
 header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item:hover {
   background: #ffffec;
@@ -89,9 +88,8 @@ footer .newsletter {
   gap: 0;
   padding: 20px;
   background-color: #f6f5f2;
-  border-color: #9f85b0;
   border-radius: 5px;
-  border-style: ridge;
+  border: 3px ridge #9f85b0;
 }
 footer .newsletter .text-newsletter {
   display: flex;
@@ -101,15 +99,20 @@ footer .newsletter .text-newsletter {
   align-content: flex-start;
   width: 50%;
 }
-footer .newsletter .text-newsletter h2 {
+footer .newsletter .text-newsletter h3 {
   margin-bottom: 5px;
   font-size: 24px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans";
+  color: #2e2e2e;
+  font-style: normal;
 }
 footer .newsletter .text-newsletter p {
   font-size: 14px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Open Sans";
+  color: #2e2e2e;
   line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
 }
 footer .newsletter .form-newsletter {
   display: flex;
@@ -118,20 +121,17 @@ footer .newsletter .form-newsletter {
 }
 footer .newsletter .form-newsletter input[type=text] {
   width: 80%;
-  border-color: #9f85b0;
-  border-style: solid;
+  border: 2px solid #9f85b0;
   border-radius: 5px;
   padding: 10px;
 }
 footer .newsletter .form-newsletter button[type=submit] {
+  border: 2px solid #9f85b0;
   background-color: #f6f5f2;
   border-radius: 5px;
-  border-color: #9f85b0;
-  border-style: solid;
-  color: #1C1C1C;
+  color: #2e2e2e;
   padding: 10px;
   font-size: 16px;
-  border-radius: 4px;
 }
 footer .newsletter .form-newsletter button[type=submit]:hover {
   border: none;
@@ -164,7 +164,7 @@ footer .pie .cont-informacion ul a {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
 }
-footer .pie .cont-informacion .box-footer h3 {
+footer .pie .cont-informacion .box-footer h4 {
   margin-bottom: 10px;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
@@ -185,14 +185,13 @@ footer .copyright {
   width: 100%;
   text-align: center;
   color: #f6f5f2;
-  background-color: #000;
+  background-color: #2e2e2e;
 }
 
 /*********************************************************************************/
 /*****************************INDEX.HTML******************************************/
 /*********************************************************************************/
 /**********************************MAIN******************************************/
-/*********SLIDER-PRINCIPAL**********/
 main {
   background-color: #f6f5f2;
   height: auto;
@@ -201,9 +200,8 @@ main #carousel1 .carousel-indicators [data-bs-target] {
   border-radius: 50%;
   height: 10px;
   width: 10px;
-  border-color: #9f85b0;
-  border-width: 1px;
-  border-style: solid;
+  padding: 0;
+  border: 1px solid #9f85b0;
 }
 main #carousel1 .carousel-indicators [data-bs-target] .active {
   background-color: #9f85b0;
@@ -261,11 +259,12 @@ main #carousel1 .carousel-control-next:hover::after {
 main .main-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   gap: 20px;
   height: 100%;
   margin-top: 5%;
 }
-main .main-container h2 {
+main .main-container h1, main .main-container h2 {
   text-align: center;
   margin-bottom: 2%;
 }
@@ -285,6 +284,15 @@ main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card
 }
 main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body img, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body img, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body img, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body img {
   height: 100%;
+}
+main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body h5, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body h5, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body h5, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body h5 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body p, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body p, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body p, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body p {
+  font-size: 16px;
+  color: rgba(112, 79, 134, 0.9725490196);
+  font-weight: bold;
 }
 main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body .btn {
   transition: transform 0.5s;
@@ -334,7 +342,7 @@ main .main-container .row .botonCategoria {
   background-position: center;
   transition: all 0.5s;
   opacity: 1;
-  box-shadow: 0 3px 15px #1C1C1C;
+  box-shadow: 0 3px 15px #2e2e2e;
 }
 main .main-container .row .botonCategoria img {
   position: absolute;
@@ -389,11 +397,9 @@ main .main-container .mensajes-aclaraciones .box-mensaje {
   width: 220px;
   padding: 0;
   text-align: center;
-  border: solid;
-  border-width: 2px;
-  border-color: #9f85b0;
+  border: 2px solid #9f85b0;
   border-radius: 50%;
-  box-shadow: 0 3px 15px #1C1C1C;
+  box-shadow: 0 3px 15px #2e2e2e;
   background-color: #fff;
 }
 main .main-container .mensajes-aclaraciones .box-mensaje .icono {
@@ -410,7 +416,6 @@ main .main-container .mensajes-aclaraciones .box-mensaje .icono {
   border-radius: 50%;
 }
 main .main-container .separador {
-  text-align: center;
   border-top: 3px solid #9f85b0;
   border-radius: 50%;
   width: 80%;
@@ -424,18 +429,34 @@ main .main-container .separador {
 .container-catalogo {
   background-color: #f6f5f2;
   display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
   gap: 5%;
   padding: 8vw 6vw;
-  justify-content: space-evenly;
 }
 .container-catalogo .filtros {
   width: 20%;
+  margin-bottom: 50px;
+}
+.container-catalogo .filtros h1 {
+  font-size: 34px;
 }
 .container-catalogo .filtros .accordion {
   --bs-accordion-bg: $main_color;
   margin-top: 50px;
 }
-.container-catalogo .filtros .accordion .accordion-body {
+.container-catalogo .filtros .accordion .accordion-item .accordion-button {
+  font-family: "Nunito";
+}
+.container-catalogo .filtros .accordion .accordion-item .accordion-button:focus {
+  box-shadow: 1px 5px 3px #9f85b0;
+}
+.container-catalogo .filtros .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: inherit;
+}
+.container-catalogo .filtros .accordion .accordion-item .accordion-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -446,7 +467,10 @@ main .main-container .separador {
 .container-catalogo .productos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-rows: auto;
   gap: 2vw;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
 }
 .container-catalogo .productos h2 {
   grid-column: 1/-1;
@@ -461,6 +485,15 @@ main .main-container .separador {
 }
 .container-catalogo .productos .card .card-body img {
   height: 100%;
+}
+.container-catalogo .productos .card .card-body h5 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.container-catalogo .productos .card .card-body p {
+  font-size: 16px;
+  color: rgba(112, 79, 134, 0.9725490196);
+  font-weight: bold;
 }
 .container-catalogo .productos .card .card-body .btn {
   width: 100%;
@@ -490,7 +523,10 @@ main .main-container .separador {
 .container-contacto {
   display: flex;
   padding: 8vw 16vw;
-  justify-content: space-between;
+  gap: 10%;
+}
+.container-contacto .cont-contactate h1 {
+  font-size: 34px;
 }
 .container-contacto .cont-contactate form {
   display: grid;
@@ -498,25 +534,81 @@ main .main-container .separador {
   grid-template-rows: auto;
   grid-template-areas: "form mensaje" "form mensaje" "enviar enviar";
   gap: 10%;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
 }
 .container-contacto .cont-contactate form .formulario-1 {
   grid-area: form;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 10px;
+}
+.container-contacto .cont-contactate form .formulario-1 input {
+  border: 2px solid #9f85b0;
+  border-radius: 20px;
+  border-color: #9f85b0;
+  box-shadow: 0px 2px 6px #9f85b0;
+  padding-left: 10px;
+}
+.container-contacto .cont-contactate form .formulario-1 input::placeholder {
+  color: gray;
+  font-size: 16px;
+  font-family: "Nunito";
 }
 .container-contacto .cont-contactate form .formulario-mensaje {
   grid-area: mensaje;
   display: flex;
   flex-direction: column;
 }
+.container-contacto .cont-contactate form .formulario-mensaje textarea {
+  resize: none;
+  height: 190px;
+  border: 2px solid #9f85b0;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px #9f85b0;
+  padding-left: 10px;
+}
+.container-contacto .cont-contactate form .formulario-mensaje textarea::placeholder {
+  color: gray;
+  font-size: 16px;
+  font-family: "Nunito";
+}
 .container-contacto .cont-contactate form .boton {
   grid-area: enviar;
+  border: 2px solid #9f85b0;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px #9f85b0;
+  padding-left: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+.container-contacto .cont-contactate form .boton:hover {
+  transform: scale(1.05);
+}
+.container-contacto .separador {
+  border-left: 3px solid #9f85b0;
+  border-radius: 50%;
+}
+.container-contacto .cont-redes h2 {
+  height: 20%;
 }
 .container-contacto .cont-redes ul {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
   list-style: none;
+  padding: 0;
 }
-.container-contacto .cont-redes ul i {
+.container-contacto .cont-redes ul a {
+  text-decoration: none;
+  color: rgba(112, 79, 134, 0.9725490196);
+}
+.container-contacto .cont-redes ul a i {
   font-size: 25px;
 }
 
@@ -530,9 +622,23 @@ main .main-container .separador {
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas: "texto texto texto texto" "texto texto texto texto" "form form map map" "form form map map";
   gap: 5%;
+  grid-auto-rows: auto;
+  grid-auto-columns: auto;
 }
 .contenido-about .titulo-about {
   grid-area: texto;
+}
+.contenido-about .titulo-about h1 {
+  font-size: 35px;
+  margin-bottom: 2rem;
+}
+.contenido-about .titulo-about p {
+  font-size: 20px;
+  font-family: "Nunito";
+  color: #2e2e2e;
+  line-height: 30px;
+  font-weight: 400;
+  font-style: none;
 }
 .contenido-about .formulario-about {
   grid-area: form;
@@ -541,12 +647,27 @@ main .main-container .separador {
   display: flex;
   flex-direction: column;
 }
+.contenido-about .formulario-about form label {
+  font-family: Nunito;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contenido-about .formulario-about form select {
+  border-radius: 20px;
+  border: 2px solid #9f85b0;
+  box-shadow: 0px 2px 6px #9f85b0;
+  margin-bottom: 5px;
+}
 .contenido-about .mapa-div {
   grid-area: map;
 }
 .contenido-about .mapa-div iframe {
   height: 100%;
   width: 100%;
+  padding: 0;
+  border: 5px double rgba(112, 79, 134, 0.9725490196);
+  border-style: double;
+  border-width: 5px;
 }
 
 /***************************************************************************************/
@@ -555,21 +676,66 @@ main .main-container .separador {
 .cont-ayuda {
   padding: 8vw 16vw;
 }
+.cont-ayuda h1 {
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+.cont-ayuda .accordion {
+  --bs-accordion-bg: $main_color;
+  margin-bottom: 50px;
+}
+.cont-ayuda .accordion .accordion-item {
+  margin-bottom: 10px;
+}
+.cont-ayuda .accordion .accordion-item .accordion-collapse {
+  background-color: #ffffec;
+}
+.cont-ayuda .accordion .accordion-item .accordion-button {
+  font-size: calc(50% + 0.4vw);
+  font-family: "Nunito";
+}
+.cont-ayuda .accordion .accordion-item .accordion-button:focus {
+  box-shadow: 1px 5px 3px #9f85b0;
+}
+.cont-ayuda .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+.cont-ayuda .accordion .accordion-item .accordion-body {
+  font-size: 16px;
+  font-family: "Nunito";
+  color: #2e2e2e;
+  font-weight: bold;
+  font-style: none;
+}
+.cont-ayuda h2 {
+  font-size: 32px;
+}
 .cont-ayuda .medios-pago {
+  margin-top: 50px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 50px;
 }
 .cont-ayuda .medios-pago img {
-  width: 120px;
   height: 60px;
+  width: 120px;
+  padding: 0;
+  object-fit: contain;
 }
 
 /***************************************************************************************/
 /********************************MEDIA QUERYS*******************************************/
 /***************************************************************************************/
 @media screen and (max-width: 991px) {
-  .navbar .bg-color2 #navbarTogglerDemo02 ul {
+  header .navbar .bg-color2 #navbarTogglerDemo02 ul {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 15px;
     position: absolute;
     top: 100%;
@@ -580,7 +746,7 @@ main .main-container .separador {
     padding-bottom: 1rem;
     background-color: rgba(112, 79, 134, 0.9725490196);
   }
-  .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link {
+  header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link {
     gap: 0;
     border-radius: 0.25rem;
     transition: all 0.3s ease;
@@ -589,10 +755,9 @@ main .main-container .separador {
     font-style: normal;
     padding-left: 1.5rem;
   }
-  .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link:hover {
+  header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link:hover {
     background-color: #9f85b0;
   }
-  /***************ABOUT***************/
   .contenido-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -657,18 +822,27 @@ main .main-container .separador {
   .container-contacto .cont-contactate form .boton {
     grid-area: enviar;
   }
-  .container-contacto .cont-redes ul {
-    list-style: none;
+  .container-contacto .separador {
+    border-top: 3px solid #9f85b0;
+    border-radius: 50%;
+    margin: 20px 0;
   }
-  .container-contacto .cont-redes ul i {
-    font-size: 25px;
+  .container-contacto .cont-redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0;
   }
   .container-catalogo {
-    background-color: #f6f5f2;
     display: flex;
-    gap: 5%;
-    padding: 8vw 6vw;
+    flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 5%;
+    background-color: #f6f5f2;
+    padding: 8vw 6vw;
   }
   .container-catalogo .filtros {
     width: 40%;
@@ -741,6 +915,7 @@ main .main-container .separador {
     text-align: center;
     background-color: #f6f5f2;
     border: none;
+    box-shadow: none;
   }
   footer .newsletter {
     display: flex;
@@ -751,9 +926,8 @@ main .main-container .separador {
     gap: 0;
     padding: 20px;
     background-color: #f6f5f2;
-    border-color: rgba(87, 41, 117, 0.568627451);
+    border: 3px ridge #9f85b0;
     border-radius: 5px;
-    border-style: solid;
   }
   footer .pie {
     display: flex;
@@ -782,7 +956,7 @@ main .main-container .separador {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 50px;
   }
   .cont-ayuda .medios-pago img {
     height: 60px;
@@ -805,7 +979,10 @@ main .main-container .separador {
   .container-catalogo .productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: auto;
     gap: 2vw;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
   }
   .container-catalogo .productos h2 {
     grid-column: 1/-1;
@@ -836,10 +1013,9 @@ main .main-container .separador {
     flex-wrap: wrap;
     gap: 0;
     padding: 20px;
+    border: 3px ridge #9f85b0;
     background-color: #f6f5f2;
-    border-color: rgba(87, 41, 117, 0.568627451);
     border-radius: 5px;
-    border-style: solid;
   }
   footer .newsletter .text-newsletter {
     display: flex;
@@ -868,10 +1044,7 @@ main .main-container .separador {
     padding: 0;
   }
   .card .card-body h5, .card .card-body p, .card .card-body a {
-    font-size: 2.5vw;
-  }
-  .newsletter .text-newsletter {
-    width: 100%;
+    font-size: calc(15px + 0.3vw);
   }
   .container-catalogo {
     display: flex;
@@ -974,7 +1147,7 @@ main .main-container .separador {
     width: 100%;
   }
   .card .card-body h5, .card .card-body p, .card .card-body a {
-    font-size: 3vw;
+    font-size: 11px;
   }
   .container-catalogo .productos {
     display: grid;

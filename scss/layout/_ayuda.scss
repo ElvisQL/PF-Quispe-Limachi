@@ -5,19 +5,45 @@
 
 .cont-ayuda {
     padding: 8vw 16vw;
+    h1{
+        font-size: 32px;
+        margin-bottom: 50px;
+    }
+    .accordion{
+        --bs-accordion-bg: $main_color;
+        margin-bottom: 50px;
+        .accordion-item{
+            margin-bottom: 10px;
+            .accordion-collapse{
+                background-color: $beige;
+            }
+            .accordion-button{
+                font-size: calc(50% + 0.4vw);
+                font-family: 'Nunito';
+                &:focus{
+                    box-shadow: 1px 5px 3px $violeta-claro;
+                }
+            }
+            .accordion-button:not(.collapsed) {
+                background-color:transparent;   
+            }
+            .accordion-body{
+                @include desing-text(16px,'Nunito',$negroclarito,null,bold,none);
+            }     
+        }
+    }
 
+    h2{
+        font-size: 32px;
+    }
 
     .medios-pago {
-        display: flex;
-        justify-content: space-evenly;
-        img{
-            width: 120px;
-            height: 60px;
-        }
+        margin-top: 50px;
+        @include d-flex(row,center,center,null,nowrap,50px);
         
+        img{
+            @include box-size(60px,120px,0,0);
+            object-fit: contain;
+        }
     }
 }
-
-
-
-

@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="title" content="Contacto">
+    <meta name = "description" content="¿Necesitas ayuda o tienes alguna pregunta? ¡Contáctanos! En nuestra página de Contacto encontrarás toda la información de cómo comunicarte con nosotros.">
     <!--FONTS DE GOOGLE FONTS------------------------->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <!------------------------------------------------>
     <!--BOOSTRAP--------------------------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -15,7 +20,8 @@
     <!------------------------------------------------->
     <!--ESTILOS CSS------------------------------------>
     <link rel="stylesheet" href="../css/style.css">
-    <title>Contacto</title>
+    <title>Sportwearz|Contacto</title>
+    <link rel="icon" href="../multimedia/favicon-32x32.png" type="image/png" sizes="32x32">
 </head>
 <body>
     <header>
@@ -23,11 +29,11 @@
         <nav class="navbar navbar-expand-lg flex-wrap">
           <!--PARTE SUPERIOR-->
           <div class="container-fluid flex-row justify-content-sm-around justify-content-center bg-color1 pl-5 pr-5">
-            <a class="navbar-brand order-lg-1 order-sm-2 d-none d-sm-block" href="../index.html">
-              <img src="../multimedia/logo.png" alt="Logo" class="img-fluid">
+            <a class="navbar-brand order-sm-2 d-lg-none" href="../index.html">
+              <img src="../multimedia/logo.png" alt="logo-sportwearz" class="img-fluid">
             </a>                                                                  <!--2 LOGOS SEGUN EL TAMAÑO , UNO FLUIDO Y OTRO NO-->
-            <a class="navbar-brand order-2 d-sm-none d-block" href="../index.html">
-              <img src="../multimedia/logo.png" alt="Logo">
+            <a class="navbar-brand order-1 d-none d-lg-block" href="../index.html">
+              <img src="../multimedia/logo.png" alt="logo-sportwearz">
             </a>
                
             <!--BARRA DE BUSQUEDA---------->
@@ -39,8 +45,8 @@
             
             <!--CONTENEDOR DE ICONOS A LA DERECHA---------->
             <div class="ml-auto order-3 d-flex justify-content-evenly px-30">
-              <img src="../multimedia/icons8-usuario-masculino-en-círculo-50.png" alt="Logo 1" class="d-sm-block d-none">
-              <img src="../multimedia/pngegg.png" alt="Logo 2" class="d-sm-block d-none">  
+              <img src="../multimedia/icons8-usuario-masculino-en-círculo-50.png" alt="logo-login" class="d-sm-block d-none">
+              <img src="../multimedia/pngegg.png" alt="logo-carrito" class="d-sm-block d-none">  
             </div>
             <!---------------------------------------------->
   
@@ -59,7 +65,7 @@
                   <a class="nav-link" href="../index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="../pages/Catalogo.html">Catalogo</a>
+                  <a class="nav-link" href="../pages/catalogo.html">Catalogo</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="../pages/about.html">Sobre Nosotros</a>
@@ -79,31 +85,20 @@
         <section class="container-contacto">
             
             <section class="cont-contactate">
-                <h2>Contactate</h2>
+                <h1>Contactate</h1>
                 <form >
                     <div class="formulario-1">
-                        <label for="">Nombre</label>
                         <input type="text" placeholder="Nombre">
-
-                        <label for="">Email</label>
-                        <input type="email" placeholder="Email" >
-
-                        <label for="">Telefono</label>
+                        <input type="email" placeholder="Email" >    
                         <input type="number" placeholder="Telefono" >
-                    </div>
-                     
+                    </div>   
                     <div class="formulario-mensaje">
-                        <label for="">Mensaje</label>
-                        <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+                        <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
                     </div>
-                    
-                
                     <button type="submit" class="boton">Enviar</button>
-                
                 </form>
-                
             </section>
-
+            <div class="separador"></div>
             <section class="cont-redes">
                 <h2>Redes Sociales</h2>
                 <ul>
@@ -127,6 +122,20 @@
                     </a>
                     
                   </li>
+                  <li>
+                    <a href="">
+                      <i class="bi bi-twitter"></i>
+                      <span>Twitter</span>
+                    </a>
+                    
+                  </li>
+                  <li>
+                    <a href="">
+                      <i class="bi bi-linkedin"></i>
+                      <span>Linkedin</span>
+                    </a>
+                    
+                  </li>
                     
                 </ul> 
 
@@ -139,7 +148,7 @@
         <!--NEWSLETTER------------------------------------->
         <section class="newsletter">
             <div class="text-newsletter">
-                <h2>Newsletter</h2>
+                <h3>Newsletter</h3>
                 <p>¡Suscríbete a nuestro boletín de noticias y recibe contenido exclusivo diseñado especialmente para los amantes del deporte. Además, obténe un 15% de descuento en tu próxima compra al unirte a nuestra lista de correo hoy mismo.</p>
             </div>
             <form class="form-newsletter">
@@ -153,12 +162,12 @@
         <!--PIE DE PAGINA --------------------------------->
         <section class="pie">
             
-            <img src="../multimedia/logo.png" alt="logo">
+            <img src="../multimedia/logo.png" alt="logo-sportwearz">
             
             <nav class = "cont-informacion">
               
               <div class="box-footer">
-                  <h3>Nosotros</h3>
+                  <h4>Nosotros</h4>
                   <ul>
                       <li><a href="">Terminos y condiciones</a></li>
                       <li><a href="">Como comprar</a></li>
@@ -169,7 +178,7 @@
               
               
               <div class="box-footer">
-                  <h3>Informacion</h3>
+                  <h4>Informacion</h4>
                   <ul>
                       <li><a href="">Medios de pago</a></li>
                       <li><a href="">Preguentas frecuentes</a></li>
@@ -179,7 +188,7 @@
               </div>
 
               <div class="box-footer">
-                  <h3>Seguinos en</h3>
+                  <h4>Seguinos en</h4>
                   <ul>
                     <li>
                       <a href="">

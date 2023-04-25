@@ -2,37 +2,46 @@
 /************************************CATALOGO*******************************************/
 /***************************************************************************************/
 
-
-
-
 .container-catalogo {
     background-color: $main_color;
-    display: flex;
-    gap: 5%;
+    @include d-flex(row,space-evenly,null,null,nowrap,5%);
     padding: 8vw 6vw;
-    justify-content: space-evenly;
     .filtros {
         width: 20%;
+        margin-bottom: 50px;
+        h1{
+            font-size: 34px;
+        }
         .accordion {
             --bs-accordion-bg: $main_color;
             margin-top: 50px;
-            .accordion-body{
-                @include d-flex(column,space-between,flex-start,null,wrap, 10px);
+            .accordion-item{
+                .accordion-button{  
+                    font-family: 'Nunito';
+                    &:focus{
+                        box-shadow: 1px 5px 3px $violeta-claro;
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+                    background-color:transparent ;
+                    color: inherit;
+                    
+                }
+                .accordion-body{
+                    @include d-flex(column,space-between,flex-start,null,wrap, 10px);
+                }
             }
         }
     }
 
     .productos {
-        
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-        gap: 2vw;
+        @include d-grid(repeat(auto-fit,minmax(150px,1fr)),auto,null,2vw,auto,auto);
         h2 {
             grid-column: 1 / -1;
             margin-bottom: 1.5%;
         }
         .card{
-            height: 100% - 18%;
+            height: 82%;
             box-shadow: 0px  2px 5px rgba(0, 0, 0, 0.540);
             overflow: hidden;
             transition: height 0.6s;
@@ -41,6 +50,15 @@
             .card-body{
                 img {
                     height: 100%;
+                }
+                h5{
+                    font-size: $card-titulo-size;
+                    font-weight: lighter;
+                }
+                p{
+                    font-size: $card-precio-size;
+                    color: $violeta-oscuro;
+                    font-weight: bold;
                 }
                 .btn {
                     width: 100%;
@@ -53,15 +71,13 @@
                     &:hover{
                         transform: scale(1.05);
                         border-color: #73529e;
-                        
                     }
                 }
-                
             }
            
             &:hover {
                 transform: scale(1.02);
-                box-shadow: 0 0 10px $headercolor2b;
+                box-shadow: 0 0 10px $violeta-oscuro;
                 height: 100% ;
                 .btn {
                     opacity: 1;
@@ -69,6 +85,4 @@
             }
         }
     }
-
 }
-

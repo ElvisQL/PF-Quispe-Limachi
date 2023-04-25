@@ -4,44 +4,38 @@ header{
     position: sticky;
     top:0;
     left: 0;
-    z-index: 1000000;
+    z-index: 1000;
     .navbar {
         padding: 0; 
-        & img {
+        img {
             width: 250px;
         }
         .bg-color1 {
-            background-color: $headercolor1;
+            background-color: $beige;
             padding: 0;
-
             form {
                 width: 40%;
-                justify-content: center;
                 .form-control {
                     width: 70%;
                     margin-right: 20px;
-                    border: 2px solid $headercolor2;
+                    border: 2px solid $violeta-claro;
                     border-radius: 10px;
                 }
                 .bg-color3 {
-                    border: 2px solid $headercolor2;
+                    border: 2px solid $violeta-claro;
                     color: $negroclarito;
                     &:hover {
-                        background-color:$headercolor2;
+                        background-color:$violeta-claro;
                         border: none;
-                        color: $headercolor1;
+                        color: $beige;
                     }
                 }
-
             }
-
-
 
             .ml-auto {
                 width: 10%; 
                 img {
-                    width: 35px;
-                    height: 35px;
+                    @include box-size(35px,35px,0,0);
                     &:hover{
                         transform: scale(1.2);
                         transition: all 0.2s ease-in-out;
@@ -50,34 +44,24 @@ header{
             }       
         }
 
-
         .bg-color2 {
-            background-color: $headercolor2;
+            background-color: $violeta-claro;
             padding: 0;   
             #navbarTogglerDemo02 {
                 ul{
                     display: flex;
                     gap: 60px;
                     .nav-item {
-                        border-radius: 5%;
                         transition: all 0.2s ease-in-out;
-                        
                         .nav-link{
-                            font-size: 18px;
-                            line-height: 30px;
-                            color: $negroclarito;
-                            font-family: $header_font;
-                            font-style: oblique;
-                            font-weight: bold;
+                            @include desing-text(20px,$header_font,$negroclarito,30px,500,normal);
                         }
                         &:hover{
-                            background:$headercolor1
-                            
+                            background:$beige
                         }
                     }
                 }
             }
-
         }
     }
 }

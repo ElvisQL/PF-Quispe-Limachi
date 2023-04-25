@@ -5,10 +5,6 @@
 
 /**********************************MAIN******************************************/
 
-
-/*********SLIDER-PRINCIPAL**********/
-
-
 main {
     background-color: $main_color;
     height: auto;
@@ -16,28 +12,20 @@ main {
     #carousel1 {
         .carousel-indicators [data-bs-target] {
             border-radius: 50%;
-            height: 10px;
-            width: 10px;
-            border-color: $headercolor2;
-            border-width: 1px;
-            border-style: solid;
-
+            @include box-size(10px,10px,0,0);
+            border: 1px solid $violeta-claro;
             .active {
-                background-color:$headercolor2;
+                background-color:$violeta-claro;
             }
         }
-
         .carousel-inner {
-            
             .carousel-item {
                 transition: transform 0.7s ease-in-out;
-                img {
-                    
+                img {   
                     width: 100%;
                 }
             }
         }
-
         .carousel-control-prev {
             &:hover{
                 transition: opacity 0.5s ease-in-out;
@@ -50,7 +38,7 @@ main {
                     right: 0;
                     bottom: 0;
                     opacity: 0.3;
-                    background-color:$headercolor2;
+                    background-color:$violeta-claro;
                 }
                 &::after {
                     position: absolute;
@@ -59,7 +47,7 @@ main {
                     right: 0;
                     bottom: 0;
                     opacity: 0.3;
-                    background-color:$headercolor2;
+                    background-color:$violeta-claro;
                 }
             }
         }
@@ -76,7 +64,7 @@ main {
                     right: 0;
                     bottom: 0;
                     opacity: 0.3;
-                    background-color:$headercolor2;
+                    background-color:$violeta-claro;
                 }
                 &::after {
                     position: absolute;
@@ -85,31 +73,26 @@ main {
                     right: 0;
                     bottom: 0;
                     opacity: 0.3;
-                    background-color:$headercolor2;
+                    background-color:$violeta-claro;
                 }
             }
         }
     }
-/////////////////////////////////////////////
+    /////////////////////////////////////////////
 
     .main-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        @include d-flex(column,null,null,null,nowrap,20px);
         height: 100%;
         margin-top: 5%;
-        h2 {
+        h1, h2 {
             text-align: center;
             margin-bottom: 2%;
         }
         .row {
             margin-bottom: 3%;
-            
-            
             #carouselMasNuevo, #carouselHombre, #carouselMujer, #carouselNinio {
-                
+
                 .carousel-inner {
-                    
                     .carousel-item{
                         transition: transform 0.7s ease-out;
                         .card{
@@ -118,35 +101,36 @@ main {
                             margin: 2%;
                             box-shadow: 0px  2px 5px rgba(0, 0, 0, 0.540);
                             transition: all 0.2s ease-in-out;
-                            .card-body{
-                            
+                            .card-body{    
                                 img{
                                     height: 100%;
+                                }
+                                h5{
+                                    font-size: $card-titulo-size;
+                                    font-weight: lighter;
+                                }
+                                p{
+                                    font-size: $card-precio-size;
+                                    color: $violeta-oscuro;
+                                    font-weight: bold;
                                 }
                                 .btn{
                                     transition: transform 0.5s;
                                     background-color:#73529e;
                                     color:#fff;
-                                    
-
                                     &:hover{
-                                        
                                         transform: scale(1.05);
                                         border-color: #73529e;
                                     }
                                 }
-
                             }
                             &:hover{
                                 transform: scale(1.04);
-                                box-shadow: 0 10px 7px $headercolor2b;         
+                                box-shadow: 0 10px 7px $violeta-oscuro;         
                             }
                         }
                     }
-       
                 }
-                    
-                
                 .carousel-control-prev{
                     left: 0;
                     right: auto;
@@ -170,7 +154,6 @@ main {
             .botonCategoria {
                 @include d-flex(row,center,center,null,wrap,0);
                
-                
                 height: auto;
                 width: 280px;
                 border-radius: 5%;
@@ -195,32 +178,25 @@ main {
                 h3{
                     font-family: Sackbones;
                     font-size: 38px;
-                    -webkit-text-stroke: 1px $headercolor2;
-                    text-stroke: 1px $headercolor2;
+                    -webkit-text-stroke: 1px $violeta-claro;
+                    text-stroke: 1px $violeta-claro;
                     -webkit-text-fill-color: #fff;
                     text-fill-color: #fff;
                     z-index: 1;
-                    transition: transform 0.5s ease-in-out;
-                    
+                    transition: transform 0.5s ease-in-out;  
                 }
-                &:hover{
-                    
+                &:hover{ 
                     opacity: 3;
-                    background-size: 100%;
-                    
+                    background-size: 100%;                  
                     background: radial-gradient(circle, white, rgb(32, 9, 46));
-                    
                     img{
                         transform: scale(1.1); 
                     }
                     h3{
                         transform: scale(1.1);
                     }
-                    
                 }
             }
-            
-
         }
         .mensajes-aclaraciones {
             @include d-flex(row,center,center,null,wrap,5%);
@@ -231,9 +207,7 @@ main {
                 @include d-flex(column,center,center,null,wrap,0);
                 @include box-size(220px,220px,0,0);
                 text-align: center;
-                border:solid;
-                border-width: 2px;
-                border-color: $headercolor2;
+                border:2px solid $violeta-claro;
                 border-radius: 50%;
                 box-shadow: 0 3px 15px $negroclarito;
                 background-color: #fff;
@@ -246,8 +220,7 @@ main {
             } 
         }   
         .separador{
-            text-align: center;
-            border-top: 3px solid $headercolor2; 
+            border-top: 3px solid $violeta-claro; 
             border-radius: 50%;
             width: 80%; 
             margin: 20px auto; 
@@ -255,8 +228,4 @@ main {
     }
 }
 
-
-
 /*****************************************************/
-
-

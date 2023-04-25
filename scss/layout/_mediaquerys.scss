@@ -4,44 +4,44 @@
 
 
 @media screen and (max-width: 991px) {
-    .navbar{
-        .bg-color2{
-            #navbarTogglerDemo02 {
-                ul{
-                    display: flex;
-                    gap: 15px;
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    z-index: 100;
-                    width: 100%;
-                    padding-top: 1rem;
-                    padding-bottom: 1rem;
-                    background-color: $headercolor2b;      
-                    .nav-item{
-                        .nav-link {
-                            gap: 0;
-                            border-radius: 0.25rem;
-                            transition: all 0.3s ease;
-                            color: $headercolor1;
-                            font-weight: 200;
-                            font-style:normal;
-                            padding-left: 1.5rem;
-                            &:hover{
-                                background-color: $headercolor2;
+    //HEADER
+    header{
+        .navbar{
+            .bg-color2{
+                #navbarTogglerDemo02 {
+                    ul{
+                        @include d-flex(column,center,flex-start,null,wrap,15px);
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        z-index: 100;
+                        width: 100%;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        background-color: $violeta-oscuro;    
+                          
+                        .nav-item{
+                            .nav-link {
+                                gap: 0;
+                                border-radius: 0.25rem;
+                                transition: all 0.3s ease;
+                                color: $beige;
+                                font-weight: 200;
+                                font-style:normal;
+                                padding-left: 1.5rem;
+                                &:hover{
+                                    background-color: $violeta-claro;
+                                }
                             }
-                        }
+                        }   
                     }
-                        
                 }
-                
             }
         }
     }
-    
 
 
-    /***************ABOUT***************/
+    ///ABOUT
     .contenido-about{
         @include d-grid(repeat(2,1fr),repeat(4,1fr),"texto texto " "texto texto " "form form " "map map",0,auto,auto);
         padding: 8vw 16vw;
@@ -75,9 +75,7 @@
         padding: 8vw 16vw;
         .cont-contactate {  
             form { 
-
                 @include d-grid(repeat(2,1fr), auto minmax(0,1fr), "form mensaje""form mensaje""enviar enviar",20px,auto,auto);
-
                 .formulario-1 {
                     grid-area: form;
                     display: flex;
@@ -90,32 +88,26 @@
                     flex-direction: column;
                 }
                 .boton {
-                    
                     grid-area: enviar;
-                    
                 }
             }
-            
-        
+        }
+        .separador{
+            border-top: 3px solid $violeta-claro; 
+            border-radius: 50%;
+            margin: 20px 0;
         }
         .cont-redes {
-            
-            ul{
-                list-style: none;
-                i{
-                    font-size: 25px;
-                }
-            }
+            @include d-flex(column, center,center,null,wrap,0);
         }
-    
     }
+
     //CATALOGO
     .container-catalogo {
+        @include d-flex(row,space-evenly,null,null,nowrap,5%);
         background-color: $main_color;
-        display: flex;
-        gap: 5%;
         padding: 8vw 6vw;
-        justify-content: space-evenly;
+
         .filtros {
             width: 40%;
             .accordion {
@@ -124,10 +116,10 @@
         }
     
         .productos {
-            
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
             gap: 2vw;
+
             h2 {
                 grid-column: 1 / -1;
                 margin-bottom: 1.5%;
@@ -148,17 +140,13 @@
                         opacity: 1;
                     }  
                 }
-               
             }
         }
-    
     }
 }
 
-
-
-
 @media screen and (max-width:767px) {
+    //INDEX-MAIN
     main{
         .main-container{
             .row{
@@ -181,26 +169,22 @@
                     text-align: center;
                     background-color: $main_color;     
                     border: none;
+                    box-shadow: none;
                 }
-            
             }
         }
     }
     
-    
-    
-    
-    
+    //FOOTER
     footer {
         .newsletter {
             @include d-flex(column,space-around,center,null,wrap,0);
             padding: 20px;
             background-color: $main_color;
-            border-color:  #57297591;
+            border: 3px ridge $violeta-claro;
             border-radius: 5px;
-            border-style: solid;
-
         }
+
         .pie{
             @include d-flex(column,space-around,center,null,wrap,0);
             background-color: $main_color;
@@ -216,12 +200,10 @@
     .cont-ayuda {
         padding: 8vw 16vw;
         .medios-pago {
-            @include d-flex(column,space-evenly,center,null,wrap,0);
-    
+            @include d-flex(column,space-evenly,center,null,wrap,50px);
             img{
                 @include box-size(60px,120px,0,0);
             }
-            
         }
     }
 
@@ -238,12 +220,8 @@
                 --bs-accordion-bg: $main_color;
             }
         }
-    
         .productos {
-            
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-            gap: 2vw;
+            @include d-grid(repeat(auto-fit,minmax(150px,1fr)),auto,null,2vw,auto,auto);
             h2 {
                 grid-column: 1 / -1;
                 margin-bottom: 1.5%;
@@ -264,23 +242,22 @@
                         opacity: 1;
                     }  
                 }
-               
             }
         }
-    
     }
 }
 
 @media screen and (max-width:576px) {
-    
+    //FOOTER
     footer {
+        
         .newsletter {
             @include d-flex(column,space-around,center,null,wrap,0);
             padding: 20px;
+            border: 3px ridge $violeta-claro ;
             background-color: $main_color;
-            border-color:  #57297591;
             border-radius: 5px;
-            border-style: solid;
+
             .text-newsletter{
                 @include d-flex(column,null,null,flex-start,wrap,0);
                 width: 100%;
@@ -298,28 +275,21 @@
             }
         } 
     }
-
+    //HEADER-NAVBAR
     .navbar {
         .container-fluid{
             @include d-flex(row,space-between,null,null,nowrap,0);
             padding: 0; 
         }
     }
-
+    //TAMAÑOS DE LAS LETRAS DE LAS CARDS
     .card {
         .card-body {
             h5 ,p, a {
-                font-size: 2.5vw;
+                font-size: calc(15px + 0.3vw);
             }
         }
     }
-
-    
-    .newsletter .text-newsletter {
-        width: 100%;
-    }
-
-    
     //CATALOGO
     .container-catalogo {
         @include d-flex(column,null,null,null,wrap,5%);
@@ -337,6 +307,7 @@
             }  
         }
     }
+    
     //ABOUT
     .contenido-about{
         @include d-grid(1fr,auto,"texto""form""map",0,auto,auto);
@@ -374,7 +345,6 @@
         padding: 8vw 16vw;
         flex-direction: column;
         .cont-contactate { 
-            
             form {
 
                 @include d-grid(1fr,auto minmax(0,1fr),"form""mensaje""enviar",10px,auto,auto);
@@ -394,16 +364,12 @@
                     flex-direction: column;
                 }
                 .boton {
-                    
                     grid-area: enviar;
-                    
                 }
             }
-            
-        
         }
+
         .cont-redes {
-            
             ul{
                 list-style: none;
                 i{
@@ -411,28 +377,24 @@
                 }
             }
         }
-    
     }
-
-
-    
-    
 }
 
 @media screen and (max-width:300px){
+    //TAMAÑOS DE LAS LETRAS DE LAS CARDS
     .card{
         width: 100%;
         .card-body{
             h5, p, a {
-                font-size: 3vw;
+                font-size: 11px;
             }
         }
     }
     
+    //GRILLA DEL CATALOGO
     .container-catalogo {
         .productos{
             @include d-grid(repeat(auto-fit,minmax(100px,1fr)),auto,null,20px,auto,auto);
-              
         }
     }
 }

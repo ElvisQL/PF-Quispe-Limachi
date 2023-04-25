@@ -6,40 +6,44 @@
 
 .contenido-about {
     padding: 8vw 16vw;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-template-areas: 
-    "texto texto texto texto"
-    "texto texto texto texto"
-    "form form map map"
-    "form form map map";
-    gap: 5%;
-
+    @include d-grid(repeat(4,1fr),repeat(4,1fr),"texto texto texto texto""texto texto texto texto""form form map map""form form map map",5%,auto,auto);
 
     .titulo-about {
         grid-area: texto;
-    
+        h1{
+            font-size: 35px;
+            margin-bottom: 2rem;
+        }
+        p{
+            @include desing-text(20px,'Nunito',$negroclarito,30px,400,none);
+        }
     }
     .formulario-about {
         grid-area: form;
         form {
             display: flex;
             flex-direction: column;
+            label{
+                font-family: Nunito;
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            select{
+                border-radius: 20px;
+                border: 2px solid $violeta-claro;
+                box-shadow: 0px 2px 6px $violeta-claro;
+                margin-bottom: 5px;
+            }
         }
     }
     .mapa-div {
         grid-area: map;
          iframe {
-            height: 100%;
-            width: 100%;
+            @include box-size(100%,100%,0,0);
+            border: 5px double $violeta-oscuro;
+            border-style: double;
+            border-width: 5px;
         }
     }
-
 }
-
-
-
-
-
 

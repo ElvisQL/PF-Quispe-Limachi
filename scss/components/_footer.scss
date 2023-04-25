@@ -2,31 +2,23 @@
 
 footer {
     height: 100%;
-
     .newsletter {
         @include d-flex(row,space-around,center,null,wrap,0);
         padding: 20px;
         background-color: $main_color;
-        border-color:  $headercolor2;
         border-radius: 5px;
-        border-style: ridge;
-        
+        border: 3px ridge $violeta-claro;
 
         .text-newsletter {
             @include d-flex(column,null,null,flex-start,wrap,0);
             width: 50%;
-            h2 {
+            h3 {
                 margin-bottom: 5px;
-                font-size: 24px;
-                font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+                @include desing-text(24px,'Open Sans',$negroclarito,null,null,normal);
             }
             p{
-                font-size: 14px;
-                font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-                line-height: 1.6;
+                @include desing-text(14px,'Open Sans',$negroclarito,1.6,400,normal);
             }
-
-
         }
 
         .form-newsletter {
@@ -35,23 +27,21 @@ footer {
             gap: 2px;
             input[type="text"]{
                 width: 80%;
-                border-color: $headercolor2;
-                border-style: solid;
+                border: 2px solid $violeta-claro; 
                 border-radius: 5px;
                 padding: 10px;
             }
             button[type="submit"]{
+                border: 2px solid $violeta-claro;
                 background-color: $main_color;
                 border-radius: 5px;
-                border-color: $headercolor2;
-                border-style: solid;
                 color: $negroclarito;
                 padding: 10px;
                 font-size: 16px;
-                border-radius: 4px;
+    
                 &:hover{
                     border: none;
-                    background-color: $headercolor2;
+                    background-color: $violeta-claro;
                     color: #fff;
                 }
             }
@@ -79,46 +69,31 @@ footer {
                 }
             }
             .box-footer {
-                h3{
+                h4{
                     margin-bottom: 10px;
                     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
                     font-size: 18px;
                 }
-
-
                 ul  {
                     padding-left: 0;
                     li {
-                        a{
-                            color: $headercolor2b;
-                        }
                         margin-top: 10px;
+                        a{
+                            color: $violeta-oscuro;
+                        }
                         img {
                             height: 20px;
                         }
                     }
                 }
-            }
-            
-             
+            }          
         }
-        
-
     }
     .copyright {
         width: 100%;
         text-align: center;
         color: $main_color;
-        background-color: #000;
+        background-color: $negroclarito;
     }
-
-
 }
-
-
-
-
-
-
-
 

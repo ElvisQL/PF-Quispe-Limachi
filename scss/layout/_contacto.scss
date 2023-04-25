@@ -5,52 +5,86 @@
 .container-contacto {
     display: flex;
     padding: 8vw 16vw;
-    justify-content: space-between;
+    gap: 10%;
     .cont-contactate {
+        h1{
+            font-size: 34px;
+        }
         form {
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-            grid-template-rows: auto;
-            grid-template-areas: 
-            "form mensaje"
-            "form mensaje"
-            "enviar enviar";
-            gap: 10%;
+            @include d-grid(repeat(2,1fr),auto,"form mensaje""form mensaje""enviar enviar",10%,auto,auto);
             .formulario-1 {
                 grid-area: form;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
+                @include d-flex(column,space-evenly,null,null,wrap,10px);
+                input{
+                    border: 2px solid $violeta-claro;
+                    border-radius: 20px;
+                    border-color: $violeta-claro;
+                    box-shadow: 0px 2px 6px $violeta-claro;
+                    padding-left: 10px;
+                    &::placeholder {
+                        color: gray;
+                        font-size: 16px;
+                        font-family: 'Nunito';          
+                    }     
+                }
             }
             .formulario-mensaje {
                 grid-area: mensaje;
                 display: flex;
                 flex-direction: column;
+                textarea{
+                    resize: none;
+                    height: 190px;
+                    border: 2px solid $violeta-claro;
+                    border-radius: 20px;
+                    box-shadow: 0px 2px 6px $violeta-claro;
+                    padding-left: 10px;
+
+                    &::placeholder {
+                        color: gray;
+                        font-size: 16px;
+                        font-family: 'Nunito';        
+                    }
+                }
             }
             .boton {
                 grid-area: enviar;
+                border: 2px solid $violeta-claro;
+                border-radius: 20px;
+                box-shadow: 0px 2px 6px $violeta-claro;
+                padding-left: 10px;
+
+                transition: transform .5s ease-in-out;
+                &:hover{
+                    transform: scale(1.05);
+                }
             }
         }
+    }
+
+    .separador{
         
-    
+        border-left: 3px solid $violeta-claro; 
+        border-radius: 50%;
+        
     }
+
     .cont-redes {
+        h2{
+            height: 20%;
+        }
         ul{
+            height: 80%;
+            @include d-flex(column,center,flex-start,null,wrap,10px);
             list-style: none;
-            i{
-                font-size: 25px;
+            padding: 0;
+            a{   
+                text-decoration: none;
+                color: $violeta-oscuro;
+                i{
+                    font-size: 25px; 
+                }
             }
         }
     }
-
 }
-
-
-
-
-
-
-
-
-
-

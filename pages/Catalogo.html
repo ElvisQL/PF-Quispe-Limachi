@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Catalogo">
+    <meta name="description" content="Explora nuestro catálogo de ropa deportiva de alta calidad y variedad de productos nacionales e importados. ¡Encuentra todo lo que necesitas para entrenar al máximo!">
     <!--FONTS DE GOOGLE FONTS------------------------->
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <!------------------------------------------------>
     <!--BOOSTRAP--------------------------------------->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
@@ -15,7 +20,8 @@
     <!------------------------------------------------->
     <!--ESTILOS CSS------------------------------------>
     <link rel="stylesheet" href="../css/style.css">
-    <title>Catalogo</title>
+    <title>Sportwearz|Catalogo</title>
+    <link rel="icon" href="../multimedia/favicon-32x32.png" type="image/png" sizes="32x32">
 </head>
 <body>
     <header >
@@ -23,11 +29,11 @@
       <nav class="navbar navbar-expand-lg flex-wrap">
         <!--PARTE SUPERIOR-->
         <div class="container-fluid flex-row justify-content-sm-around justify-content-center bg-color1 pl-5 pr-5">
-          <a class="navbar-brand order-lg-1 order-sm-2 d-none d-sm-block" href="../index.html">
-            <img src="../multimedia/logo.png" alt="Logo" class="img-fluid">
+          <a class="navbar-brand order-sm-2 d-lg-none" href="../index.html">
+            <img src="../multimedia/logo.png" alt="logo-sportwearz" class="img-fluid">
           </a>                                                                  <!--2 LOGOS SEGUN EL TAMAÑO , UNO FLUIDO Y OTRO NO-->
-          <a class="navbar-brand order-2 d-sm-none d-block" href="../index.html">
-            <img src="../multimedia/logo.png" alt="Logo">
+          <a class="navbar-brand order-1 d-none d-lg-block" href="../index.html">
+            <img src="../multimedia/logo.png" alt="logo-sportwearz">
           </a>
              
           <!--BARRA DE BUSQUEDA---------->
@@ -39,8 +45,8 @@
           
           <!--CONTENEDOR DE ICONOS A LA DERECHA---------->
           <div class="ml-auto order-3 d-flex justify-content-evenly px-30">
-            <img src="../multimedia/icons8-usuario-masculino-en-círculo-50.png" alt="Logo 1" class="d-sm-block d-none">
-            <img src="../multimedia/pngegg.png" alt="Logo 2" class="d-sm-block d-none">  
+            <img src="../multimedia/icons8-usuario-masculino-en-círculo-50.png" alt="logo-login" class="d-sm-block d-none">
+            <img src="../multimedia/pngegg.png" alt="logo-carrito" class="d-sm-block d-none">  
           </div>
           <!---------------------------------------------->
 
@@ -59,7 +65,7 @@
                 <a class="nav-link" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../pages/Catalogo.html">Catalogo</a>
+                <a class="nav-link" href="../pages/catalogo.html">Catalogo</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="../pages/about.html">Sobre Nosotros</a>
@@ -78,7 +84,7 @@
     <main>
         <section class="container-catalogo">
             <section class="filtros"> 
-                <h2>Filtros</h2>
+                <h1>Filtros</h1>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                       <h2 class="accordion-header">
@@ -166,7 +172,7 @@
             <section class="productos"> 
                 <h2>Productos</h2>
                 <div class="card" >
-                    <img src="../multimedia/im10.jpg" class="card-img-top" alt="...">
+                    <img src="../multimedia/im10.jpg" class="card-img-top" alt="producto1">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Precio =.</p>
@@ -174,7 +180,7 @@
                     </div>
                 </div>
                 <div class="card" >
-                    <img src="../multimedia/im2.jpg" class="card-img-top" alt="...">
+                    <img src="../multimedia/im2.jpg" class="card-img-top" alt="producto2">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
                       <p class="card-text">Precio =.</p>
@@ -182,7 +188,7 @@
                     </div>
                   </div>
                 <div class="card" >
-                <img src="../multimedia/im3.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im3.jpg" class="card-img-top" alt="producto3">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -190,7 +196,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im4.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im4.jpg" class="card-img-top" alt="producto4">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -198,7 +204,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im5.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im5.jpg" class="card-img-top" alt="producto5">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -206,7 +212,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im6.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im6.jpg" class="card-img-top" alt="producto6">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -214,7 +220,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im7.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im7.jpg" class="card-img-top" alt="producto7">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -222,7 +228,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im8.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im8.jpg" class="card-img-top" alt="producto8">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -230,7 +236,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im9.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im9.jpg" class="card-img-top" alt="producto9">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -238,7 +244,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im10.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im10.jpg" class="card-img-top" alt="producto10">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -246,7 +252,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im2.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im2.jpg" class="card-img-top" alt="producto11">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -254,7 +260,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im3.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im3.jpg" class="card-img-top" alt="producto12">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -262,7 +268,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im4.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im4.jpg" class="card-img-top" alt="producto13">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -270,7 +276,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im5.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im5.jpg" class="card-img-top" alt="producto14">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -278,7 +284,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im6.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im6.jpg" class="card-img-top" alt="producto15">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -286,7 +292,7 @@
                 </div>
                 </div>
                 <div class="card" >
-                <img src="../multimedia/im7.jpg" class="card-img-top" alt="...">
+                <img src="../multimedia/im7.jpg" class="card-img-top" alt="producto16">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">Precio =.</p>
@@ -304,7 +310,7 @@
         <!--NEWSLETTER------------------------------------->
         <section class="newsletter">
             <div class="text-newsletter">
-                <h2>Newsletter</h2>
+                <h3>Newsletter</h>
                 <p>¡Suscríbete a nuestro boletín de noticias y recibe contenido exclusivo diseñado especialmente para los amantes del deporte. Además, obténe un 15% de descuento en tu próxima compra al unirte a nuestra lista de correo hoy mismo.</p>
             </div>
             <form class="form-newsletter">
@@ -318,7 +324,7 @@
         <!--PIE DE PAGINA --------------------------------->
         <section class="pie">
         
-            <img src="../multimedia/logo.png" alt="logo">
+            <img src="../multimedia/logo.png" alt="logo-sportwearz">
         
             <nav class = "cont-informacion">
               
@@ -380,6 +386,8 @@
     </section>
     <!------------------------------------------------>
     </footer>
+    <!--SCRIPT BOOSTRAP-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    
 </body>
 </html>
