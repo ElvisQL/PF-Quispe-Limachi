@@ -17,7 +17,7 @@
             margin-top: 50px;
             .accordion-item{
                 .accordion-button{  
-                    font-family: 'Nunito';
+                    font-family: $main_font;
                     &:focus{
                         box-shadow: 1px 5px 3px $violeta-claro;
                     }

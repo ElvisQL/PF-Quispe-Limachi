@@ -14,10 +14,10 @@ footer {
             width: 50%;
             h3 {
                 margin-bottom: 5px;
-                @include desing-text(24px,'Open Sans',$negroclarito,null,null,normal);
+                @include desing-text(24px,$main_font,$negroclarito,null,null,normal);
             }
             p{
-                @include desing-text(14px,'Open Sans',$negroclarito,1.6,400,normal);
+                @include desing-text(16px,$main_font,$negroclarito,1.6,400,normal);
             }
         }
 

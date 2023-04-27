@@ -24,7 +24,7 @@
                     &::placeholder {
                         color: gray;
                         font-size: 16px;
-                        font-family: 'Nunito';          
+                        font-family: $main_font;          
                     }     
                 }
             }
@@ -43,7 +43,7 @@
                     &::placeholder {
                         color: gray;
                         font-size: 16px;
-                        font-family: 'Nunito';        
+                        font-family: $main_font;        
                     }
                 }
             }

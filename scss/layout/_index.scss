@@ -106,13 +106,10 @@ main {
                                     height: 100%;
                                 }
                                 h5{
-                                    font-size: $card-titulo-size;
-                                    font-weight: lighter;
+                                    @include desing-text($card-titulo-size,$main_font,$negroclarito,null,lighter,normal);
                                 }
                                 p{
-                                    font-size: $card-precio-size;
-                                    color: $violeta-oscuro;
-                                    font-weight: bold;
+                                    @include desing-text($card-precio-size,$main_font,$violeta-oscuro,null,bold,normal);       
                                 }
                                 .btn{
                                     transition: transform 0.5s;
@@ -176,7 +173,7 @@ main {
                     transition: transform 0.5s ease-in-out;   
                 }
                 h3{
-                    font-family: Sackbones;
+                    font-family: $card-catalogos-font;
                     font-size: 38px;
                     -webkit-text-stroke: 1px $violeta-claro;
                     text-stroke: 1px $violeta-claro;
@@ -216,6 +213,9 @@ main {
                     @include box-size(40px,40px,0,0);
                     border: 2px solid #000;
                     border-radius: 50%;
+                }
+                span{
+                    @include desing-text(15px,$main_font,$negroclarito,null,normal,normal);
                 }
             } 
         }   

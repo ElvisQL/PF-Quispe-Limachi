@@ -64,7 +64,7 @@ header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item {
 }
 header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link {
   font-size: 20px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #2e2e2e;
   line-height: 30px;
   font-weight: 500;
@@ -102,13 +102,13 @@ footer .newsletter .text-newsletter {
 footer .newsletter .text-newsletter h3 {
   margin-bottom: 5px;
   font-size: 24px;
-  font-family: "Open Sans";
+  font-family: "Nunito", "Monserrat", sans-serif;
   color: #2e2e2e;
   font-style: normal;
 }
 footer .newsletter .text-newsletter p {
-  font-size: 14px;
-  font-family: "Open Sans";
+  font-size: 16px;
+  font-family: "Nunito", "Monserrat", sans-serif;
   color: #2e2e2e;
   line-height: 1.6;
   font-weight: 400;
@@ -287,12 +287,17 @@ main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card
 }
 main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body h5, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body h5, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body h5, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body h5 {
   font-size: 18px;
+  font-family: "Nunito", "Monserrat", sans-serif;
+  color: #2e2e2e;
   font-weight: lighter;
+  font-style: normal;
 }
 main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body p, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body p, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body p, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body p {
   font-size: 16px;
+  font-family: "Nunito", "Monserrat", sans-serif;
   color: rgba(112, 79, 134, 0.9725490196);
   font-weight: bold;
+  font-style: normal;
 }
 main .main-container .row #carouselMasNuevo .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselHombre .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselMujer .carousel-inner .carousel-item .card .card-body .btn, main .main-container .row #carouselNinio .carousel-inner .carousel-item .card .card-body .btn {
   transition: transform 0.5s;
@@ -355,7 +360,7 @@ main .main-container .row .botonCategoria img {
   transition: transform 0.5s ease-in-out;
 }
 main .main-container .row .botonCategoria h3 {
-  font-family: Sackbones;
+  font-family: "Bebas Neue", "Monserrat", "sans serif";
   font-size: 38px;
   -webkit-text-stroke: 1px #9f85b0;
   text-stroke: 1px #9f85b0;
@@ -415,6 +420,13 @@ main .main-container .mensajes-aclaraciones .box-mensaje .icono {
   border: 2px solid #000;
   border-radius: 50%;
 }
+main .main-container .mensajes-aclaraciones .box-mensaje span {
+  font-size: 15px;
+  font-family: "Nunito", "Monserrat", sans-serif;
+  color: #2e2e2e;
+  font-weight: normal;
+  font-style: normal;
+}
 main .main-container .separador {
   border-top: 3px solid #9f85b0;
   border-radius: 50%;
@@ -447,7 +459,7 @@ main .main-container .separador {
   margin-top: 50px;
 }
 .container-catalogo .filtros .accordion .accordion-item .accordion-button {
-  font-family: "Nunito";
+  font-family: "Nunito", "Monserrat", sans-serif;
 }
 .container-catalogo .filtros .accordion .accordion-item .accordion-button:focus {
   box-shadow: 1px 5px 3px #9f85b0;
@@ -555,7 +567,7 @@ main .main-container .separador {
 .container-contacto .cont-contactate form .formulario-1 input::placeholder {
   color: gray;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Nunito", "Monserrat", sans-serif;
 }
 .container-contacto .cont-contactate form .formulario-mensaje {
   grid-area: mensaje;
@@ -573,7 +585,7 @@ main .main-container .separador {
 .container-contacto .cont-contactate form .formulario-mensaje textarea::placeholder {
   color: gray;
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Nunito", "Monserrat", sans-serif;
 }
 .container-contacto .cont-contactate form .boton {
   grid-area: enviar;
@@ -634,7 +646,7 @@ main .main-container .separador {
 }
 .contenido-about .titulo-about p {
   font-size: 20px;
-  font-family: "Nunito";
+  font-family: "Nunito", "Monserrat", sans-serif;
   color: #2e2e2e;
   line-height: 30px;
   font-weight: 400;
@@ -648,7 +660,7 @@ main .main-container .separador {
   flex-direction: column;
 }
 .contenido-about .formulario-about form label {
-  font-family: Nunito;
+  font-family: "Nunito", "Monserrat", sans-serif;
   font-size: 18px;
   margin-bottom: 5px;
 }
@@ -692,7 +704,7 @@ main .main-container .separador {
 }
 .cont-ayuda .accordion .accordion-item .accordion-button {
   font-size: calc(50% + 0.4vw);
-  font-family: "Nunito";
+  font-family: "Nunito", "Monserrat", sans-serif;
 }
 .cont-ayuda .accordion .accordion-item .accordion-button:focus {
   box-shadow: 1px 5px 3px #9f85b0;
@@ -702,7 +714,7 @@ main .main-container .separador {
 }
 .cont-ayuda .accordion .accordion-item .accordion-body {
   font-size: 16px;
-  font-family: "Nunito";
+  font-family: "Nunito", "Monserrat", sans-serif;
   color: #2e2e2e;
   font-weight: bold;
   font-style: none;
@@ -1077,7 +1089,7 @@ main .main-container .separador {
     gap: 0;
     grid-auto-rows: auto;
     grid-auto-columns: auto;
-    padding: 8vw 16vw;
+    padding: 4vw 6vw;
   }
   .contenido-about .titulo-about {
     grid-area: texto;
@@ -1106,7 +1118,7 @@ main .main-container .separador {
   }
   .container-contacto {
     display: flex;
-    padding: 8vw 16vw;
+    padding: 4vw 8vw;
     flex-direction: column;
   }
   .container-contacto .cont-contactate form {
@@ -1140,6 +1152,12 @@ main .main-container .separador {
   }
   .container-contacto .cont-redes ul i {
     font-size: 25px;
+  }
+  .cont-ayuda {
+    padding: 4vw 5vw;
+  }
+  .cont-ayuda h1 {
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 300px) {

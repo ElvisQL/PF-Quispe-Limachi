@@ -19,7 +19,7 @@
             }
             .accordion-button{
                 font-size: calc(50% + 0.4vw);
-                font-family: 'Nunito';
+                font-family: $main_font;
                 &:focus{
                     box-shadow: 1px 5px 3px $violeta-claro;
                 }
@@ -28,7 +28,7 @@
                 background-color:transparent;   
             }
             .accordion-body{
-                @include desing-text(16px,'Nunito',$negroclarito,null,bold,none);
+                @include desing-text(16px,$main_font ,$negroclarito,null,bold,none);
             }     
         }
     }
