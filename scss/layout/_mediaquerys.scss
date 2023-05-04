@@ -33,6 +33,10 @@
                                     background-color: $violeta-claro;
                                 }
                             }
+                            &:hover{
+                                background-color: transparent;
+                                width: 100%;
+                            }
                         }   
                     }
                 }

@@ -770,6 +770,10 @@ main .main-container .separador {
   header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item .nav-link:hover {
     background-color: #9f85b0;
   }
+  header .navbar .bg-color2 #navbarTogglerDemo02 ul .nav-item:hover {
+    background-color: transparent;
+    width: 100%;
+  }
   .contenido-about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
